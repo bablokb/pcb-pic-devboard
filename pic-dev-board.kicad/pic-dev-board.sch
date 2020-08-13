@@ -5,10 +5,10 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 2
 Title "PIC Development Board"
-Date "2020-08-11"
+Date "2020-08-13"
 Rev "1"
 Comp "Bernhard Bablok"
-Comment1 "https://github.com/bablokb/pcb-pic12-dev"
+Comment1 "https://github.com/bablokb/pcb-pic-devboard"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -182,8 +182,6 @@ F 3 "" H 4800 3750 50  0001 C CNN
 $EndComp
 Text Label 1950 4750 0    50   ~ 0
 Vdd
-Wire Wire Line
-	5200 5650 5200 5750
 $Comp
 L Device:LED D1
 U 1 1 5F351F4B
@@ -567,8 +565,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/41262E.pdf" H 5200 4850 50 
 	1    5200 4850
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	5200 4050 5200 3950
 Connection ~ 5200 4050
 Connection ~ 4800 4050
 Wire Wire Line
@@ -853,35 +849,25 @@ Wire Wire Line
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5F3F0293
-P 5200 5750
-F 0 "#FLG0101" H 5200 5825 50  0001 C CNN
-F 1 "PWR_FLAG" V 5200 5878 50  0000 L CNN
-F 2 "" H 5200 5750 50  0001 C CNN
-F 3 "~" H 5200 5750 50  0001 C CNN
-	1    5200 5750
+P 5400 6950
+F 0 "#FLG0101" H 5400 7025 50  0001 C CNN
+F 1 "PWR_FLAG" V 5400 7078 50  0000 L CNN
+F 2 "" H 5400 6950 50  0001 C CNN
+F 3 "~" H 5400 6950 50  0001 C CNN
+	1    5400 6950
 	0    1    1    0   
 $EndComp
-Connection ~ 5200 5750
-Wire Wire Line
-	5200 5750 5200 5850
 $Comp
 L power:PWR_FLAG #FLG0102
 U 1 1 5F3F0E86
-P 5600 3850
-F 0 "#FLG0102" H 5600 3925 50  0001 C CNN
-F 1 "PWR_FLAG" H 5600 4023 50  0000 C CNN
-F 2 "" H 5600 3850 50  0001 C CNN
-F 3 "~" H 5600 3850 50  0001 C CNN
-	1    5600 3850
+P 5450 6700
+F 0 "#FLG0102" H 5450 6775 50  0001 C CNN
+F 1 "PWR_FLAG" H 5450 6873 50  0000 C CNN
+F 2 "" H 5450 6700 50  0001 C CNN
+F 3 "~" H 5450 6700 50  0001 C CNN
+	1    5450 6700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5600 3850 5600 3950
-Wire Wire Line
-	5600 3950 5200 3950
-Connection ~ 5200 3950
-Wire Wire Line
-	5200 3950 5200 3900
 Wire Wire Line
 	8550 4450 8550 5200
 $Comp
@@ -898,4 +884,58 @@ $EndComp
 Connection ~ 9350 5200
 Wire Wire Line
 	9350 5200 8850 5200
+$Comp
+L Connector:Barrel_Jack_Switch J15
+U 1 1 5F353FBE
+P 4600 6850
+F 0 "J15" H 4657 7167 50  0000 C CNN
+F 1 "Barrel_Jack_Switch" H 4657 7076 50  0000 C CNN
+F 2 "" H 4650 6810 50  0001 C CNN
+F 3 "~" H 4650 6810 50  0001 C CNN
+	1    4600 6850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4900 6850
+$Comp
+L power:GND #PWR0103
+U 1 1 5F362EB6
+P 5150 7150
+F 0 "#PWR0103" H 5150 6900 50  0001 C CNN
+F 1 "GND" H 5155 6977 50  0000 C CNN
+F 2 "" H 5150 7150 50  0001 C CNN
+F 3 "" H 5150 7150 50  0001 C CNN
+	1    5150 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0104
+U 1 1 5F363A77
+P 5150 6600
+F 0 "#PWR0104" H 5150 6450 50  0001 C CNN
+F 1 "+5V" H 5165 6773 50  0000 C CNN
+F 2 "" H 5150 6600 50  0001 C CNN
+F 3 "" H 5150 6600 50  0001 C CNN
+	1    5150 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 6750 5150 6750
+Wire Wire Line
+	5150 6750 5150 6600
+Wire Wire Line
+	4900 6950 5150 6950
+Wire Wire Line
+	5150 6950 5150 7150
+Wire Wire Line
+	5150 6750 5450 6750
+Wire Wire Line
+	5450 6750 5450 6700
+Connection ~ 5150 6750
+Wire Wire Line
+	5200 5650 5200 5850
+Wire Wire Line
+	5150 6950 5400 6950
+Connection ~ 5150 6950
+Wire Wire Line
+	5200 3900 5200 4050
 $EndSCHEMATC
