@@ -96,12 +96,12 @@ $EndComp
 $Comp
 L Connector:Conn_01x05_Male J8
 U 1 1 5F34B8FA
-P 1300 7100
-F 0 "J8" H 1500 6650 50  0000 R CNN
-F 1 "Conn_TRISA" H 1700 6750 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 1300 7100 50  0001 C CNN
-F 3 "~" H 1300 7100 50  0001 C CNN
-	1    1300 7100
+P 1400 6850
+F 0 "J8" H 1600 6400 50  0000 R CNN
+F 1 "Conn_TRISA" H 1800 6500 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 1400 6850 50  0001 C CNN
+F 3 "~" H 1400 6850 50  0001 C CNN
+	1    1400 6850
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -152,9 +152,9 @@ Wire Wire Line
 	2750 4900 2750 4550
 Wire Wire Line
 	3150 4700 3150 4450
-Text Notes 950  7450 0    50   ~ 0
+Text Notes 1050 7200 0    50   ~ 0
 GPIO/TRISA
-Text Label 1100 7300 2    50   ~ 0
+Text Label 1200 7050 2    50   ~ 0
 GP0
 Text Notes 1600 5050 0    50   ~ 0
 ISCP
@@ -220,7 +220,7 @@ L Device:R R1
 U 1 1 5F35529F
 P 1050 950
 F 0 "R1" V 1250 900 50  0000 L CNN
-F 1 "1k" V 1150 900 50  0000 L CNN
+F 1 "4.7k" V 1150 900 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 980 950 50  0001 C CNN
 F 3 "~" H 1050 950 50  0001 C CNN
 	1    1050 950 
@@ -252,7 +252,7 @@ Text Label 2650 5300 2    50   ~ 0
 GP0
 Wire Wire Line
 	2750 5300 2750 5200
-Text Label 1100 7200 2    50   ~ 0
+Text Label 1200 6950 2    50   ~ 0
 GP1
 Text Label 3250 5100 0    50   ~ 0
 GP1
@@ -262,13 +262,13 @@ Wire Wire Line
 	3150 5100 3150 5000
 Wire Wire Line
 	2650 5300 2750 5300
-Text Label 1100 7100 2    50   ~ 0
+Text Label 1200 6850 2    50   ~ 0
 GP2
 Text Label 3700 4550 2    50   ~ 0
 GP2
-Text Label 1100 7000 2    50   ~ 0
+Text Label 1200 6750 2    50   ~ 0
 GP4
-Text Label 1100 6900 2    50   ~ 0
+Text Label 1200 6650 2    50   ~ 0
 GP5
 Text Label 1300 850  2    50   ~ 0
 GP0
@@ -312,7 +312,7 @@ L Device:R R3
 U 1 1 5F381946
 P 2700 950
 F 0 "R3" V 2900 900 50  0000 L CNN
-F 1 "1k" V 2800 900 50  0000 L CNN
+F 1 "4.7k" V 2800 900 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2630 950 50  0001 C CNN
 F 3 "~" H 2700 950 50  0001 C CNN
 	1    2700 950 
@@ -382,7 +382,7 @@ L Device:R R5
 U 1 1 5F388FA6
 P 1050 1550
 F 0 "R5" V 1250 1500 50  0000 L CNN
-F 1 "1k" V 1150 1500 50  0000 L CNN
+F 1 "4.7k" V 1150 1500 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 980 1550 50  0001 C CNN
 F 3 "~" H 1050 1550 50  0001 C CNN
 	1    1050 1550
@@ -452,7 +452,7 @@ L Device:R R7
 U 1 1 5F38F713
 P 2750 1600
 F 0 "R7" V 2950 1550 50  0000 L CNN
-F 1 "1k" V 2850 1550 50  0000 L CNN
+F 1 "4.7k" V 2850 1550 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2680 1600 50  0001 C CNN
 F 3 "~" H 2750 1600 50  0001 C CNN
 	1    2750 1600
@@ -522,7 +522,7 @@ L Device:R R9
 U 1 1 5F396750
 P 1000 2100
 F 0 "R9" V 1200 2050 50  0000 L CNN
-F 1 "1k" V 1100 2050 50  0000 L CNN
+F 1 "4.7k" V 1100 2050 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 930 2100 50  0001 C CNN
 F 3 "~" H 1000 2100 50  0001 C CNN
 	1    1000 2100
@@ -690,17 +690,17 @@ GP5
 $Comp
 L Connector:Conn_01x04_Male J9
 U 1 1 5F386F08
-P 1900 7200
-F 0 "J9" H 2150 6700 50  0000 R CNN
-F 1 "Conn_TRISB" H 2250 6800 50  0000 R CNN
-F 2 "" H 1900 7200 50  0001 C CNN
-F 3 "~" H 1900 7200 50  0001 C CNN
-	1    1900 7200
+P 2000 6950
+F 0 "J9" H 2250 6450 50  0000 R CNN
+F 1 "Conn_TRISB" H 2350 6550 50  0000 R CNN
+F 2 "" H 2000 6950 50  0001 C CNN
+F 3 "~" H 2000 6950 50  0001 C CNN
+	1    2000 6950
 	-1   0    0    1   
 $EndComp
-Text Notes 1600 7450 0    50   ~ 0
+Text Notes 1700 7200 0    50   ~ 0
 TRISB
-Text Label 1700 7300 2    50   ~ 0
+Text Label 1800 7050 2    50   ~ 0
 RB4
 Text Label 3700 5050 2    50   ~ 0
 RB4
@@ -710,40 +710,40 @@ Text Label 3700 5250 2    50   ~ 0
 RB6
 Text Label 3700 5350 2    50   ~ 0
 RB7
-Text Label 1700 7200 2    50   ~ 0
+Text Label 1800 6950 2    50   ~ 0
 RB5
-Text Label 1700 7100 2    50   ~ 0
+Text Label 1800 6850 2    50   ~ 0
 RB6
-Text Label 1700 7000 2    50   ~ 0
+Text Label 1800 6750 2    50   ~ 0
 RB7
 $Comp
 L Connector:Conn_01x08_Male J7
 U 1 1 5F38A390
-P 2500 7000
-F 0 "J7" H 2650 6300 50  0000 C CNN
-F 1 "Conn_TRISC" H 2650 6450 50  0000 C CNN
-F 2 "" H 2500 7000 50  0001 C CNN
-F 3 "~" H 2500 7000 50  0001 C CNN
-	1    2500 7000
+P 2600 6750
+F 0 "J7" H 2750 6050 50  0000 C CNN
+F 1 "Conn_TRISC" H 2750 6200 50  0000 C CNN
+F 2 "" H 2600 6750 50  0001 C CNN
+F 3 "~" H 2600 6750 50  0001 C CNN
+	1    2600 6750
 	-1   0    0    1   
 $EndComp
-Text Notes 2250 7450 0    50   ~ 0
+Text Notes 2350 7200 0    50   ~ 0
 TRISC
-Text Label 2300 7300 2    50   ~ 0
+Text Label 2400 7050 2    50   ~ 0
 RC0
-Text Label 2300 7200 2    50   ~ 0
+Text Label 2400 6950 2    50   ~ 0
 RC1
-Text Label 2300 7100 2    50   ~ 0
+Text Label 2400 6850 2    50   ~ 0
 RC2
-Text Label 2300 7000 2    50   ~ 0
+Text Label 2400 6750 2    50   ~ 0
 RC3
-Text Label 2300 6900 2    50   ~ 0
+Text Label 2400 6650 2    50   ~ 0
 RC4
-Text Label 2300 6800 2    50   ~ 0
+Text Label 2400 6550 2    50   ~ 0
 RC5
-Text Label 2300 6700 2    50   ~ 0
+Text Label 2400 6450 2    50   ~ 0
 RC6
-Text Label 2300 6600 2    50   ~ 0
+Text Label 2400 6350 2    50   ~ 0
 RC7
 Text Label 6700 4350 0    50   ~ 0
 RC0
@@ -965,4 +965,173 @@ Wire Wire Line
 	5200 3800 5200 4050
 Wire Wire Line
 	5200 3800 5450 3800
+$Comp
+L Connector:Conn_01x04_Male J17
+U 1 1 5F37419B
+P 5550 1050
+F 0 "J17" V 5612 1194 50  0000 L CNN
+F 1 "I2C" V 5703 1194 50  0000 L CNN
+F 2 "" H 5550 1050 50  0001 C CNN
+F 3 "~" H 5550 1050 50  0001 C CNN
+	1    5550 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR024
+U 1 1 5F3749F6
+P 5750 1450
+F 0 "#PWR024" H 5750 1200 50  0001 C CNN
+F 1 "GND" H 5755 1277 50  0000 C CNN
+F 2 "" H 5750 1450 50  0001 C CNN
+F 3 "" H 5750 1450 50  0001 C CNN
+	1    5750 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR023
+U 1 1 5F375286
+P 5550 1450
+F 0 "#PWR023" H 5550 1300 50  0001 C CNN
+F 1 "+5V" H 5565 1623 50  0000 C CNN
+F 2 "" H 5550 1450 50  0001 C CNN
+F 3 "" H 5550 1450 50  0001 C CNN
+	1    5550 1450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5750 1450 5650 1450
+Wire Wire Line
+	5650 1450 5650 1250
+Wire Wire Line
+	5550 1450 5550 1250
+$Comp
+L Device:R R16
+U 1 1 5F379703
+P 5000 1350
+F 0 "R16" V 4793 1350 50  0000 C CNN
+F 1 "4.7k" V 4884 1350 50  0000 C CNN
+F 2 "" V 4930 1350 50  0001 C CNN
+F 3 "~" H 5000 1350 50  0001 C CNN
+	1    5000 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R17
+U 1 1 5F37A3EC
+P 5000 1700
+F 0 "R17" V 5200 1700 50  0000 C CNN
+F 1 "4.7k" V 5100 1700 50  0000 C CNN
+F 2 "" V 4930 1700 50  0001 C CNN
+F 3 "~" H 5000 1700 50  0001 C CNN
+	1    5000 1700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5150 1350 5200 1350
+Wire Wire Line
+	5350 1350 5350 1250
+Wire Wire Line
+	5150 1700 5300 1700
+Wire Wire Line
+	5450 1700 5450 1250
+$Comp
+L power:+5V #PWR019
+U 1 1 5F380B46
+P 4850 1350
+F 0 "#PWR019" H 4850 1200 50  0001 C CNN
+F 1 "+5V" H 4865 1523 50  0000 C CNN
+F 2 "" H 4850 1350 50  0001 C CNN
+F 3 "" H 4850 1350 50  0001 C CNN
+	1    4850 1350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR025
+U 1 1 5F38153A
+P 4850 1700
+F 0 "#PWR025" H 4850 1550 50  0001 C CNN
+F 1 "+5V" H 4865 1873 50  0000 C CNN
+F 2 "" H 4850 1700 50  0001 C CNN
+F 3 "" H 4850 1700 50  0001 C CNN
+	1    4850 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J18
+U 1 1 5F3819E6
+P 6100 1200
+F 0 "J18" H 6250 1550 50  0000 R CNN
+F 1 "GP1(RA1)/RB6" H 6500 1450 50  0000 R CNN
+F 2 "" H 6100 1200 50  0001 C CNN
+F 3 "~" H 6100 1200 50  0001 C CNN
+	1    6100 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J19
+U 1 1 5F384D07
+P 6100 1850
+F 0 "J19" H 6250 2200 50  0000 R CNN
+F 1 "GP2(RA2)/RB4" H 6500 2100 50  0000 R CNN
+F 2 "" H 6100 1850 50  0001 C CNN
+F 3 "~" H 6100 1850 50  0001 C CNN
+	1    6100 1850
+	1    0    0    -1  
+$EndComp
+Text Label 6300 1100 0    50   ~ 0
+GP1
+Text Label 6300 1750 0    50   ~ 0
+GP2
+Text Label 6300 1300 0    50   ~ 0
+RB6
+Text Label 6300 1950 0    50   ~ 0
+RB4
+Text Label 6300 1200 0    50   ~ 0
+SCL
+Text Label 6300 1850 0    50   ~ 0
+SDA
+Text Label 5200 1500 0    50   ~ 0
+SCL
+Text Label 5300 1850 0    50   ~ 0
+SDA
+Wire Wire Line
+	5200 1500 5200 1350
+Connection ~ 5200 1350
+Wire Wire Line
+	5200 1350 5350 1350
+Wire Wire Line
+	5300 1850 5300 1700
+Connection ~ 5300 1700
+Wire Wire Line
+	5300 1700 5450 1700
+Wire Notes Line
+	6650 2250 6650 700 
+Wire Notes Line
+	6650 700  4500 700 
+Wire Notes Line
+	4500 700  4500 2250
+Wire Notes Line
+	4500 2250 6650 2250
+Text Notes 6050 2200 0    50   ~ 0
+I2C-Connector
+Wire Notes Line
+	600  600  4150 600 
+Wire Notes Line
+	4150 600  4150 2500
+Wire Notes Line
+	4150 2500 600  2500
+Wire Notes Line
+	600  2500 600  600 
+Text Notes 2950 2450 0    50   ~ 0
+LEDs or pullups for GP0-GP5
+Wire Notes Line
+	850  5900 2800 5900
+Wire Notes Line
+	2800 5900 2800 7400
+Wire Notes Line
+	2800 7400 850  7400
+Wire Notes Line
+	850  7400 850  5900
+Text Notes 1950 7350 0    50   ~ 0
+External connectors
 $EndSCHEMATC
