@@ -16,7 +16,7 @@ Minimal Stripboard Version
 In the directory `pic12-dev-stripboard.kicad` you find the schema and layout for
 a minimal stripboard version:
 
-![](preview-stripboard.png)
+![](stripboard.jpg)
 
 ![](layout-stripboard.png)
 
