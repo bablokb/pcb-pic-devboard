@@ -30,7 +30,7 @@ U 1 1 5F32065D
 P 9350 4950
 F 0 "DS1" V 9304 4106 50  0000 R CNN
 F 1 "WC1602A" V 9395 4106 50  0000 R CNN
-F 2 "Display:WC1602A" H 9350 4050 50  0001 C CIN
+F 2 "user:WC1602A_Connector" H 9350 4050 50  0001 C CIN
 F 3 "http://www.wincomlcd.com/pdf/WC1602A-SFYLYHTC06.pdf" H 10050 4950 50  0001 C CNN
 	1    9350 4950
 	0    -1   1    0   
@@ -68,7 +68,7 @@ U 1 1 5F320680
 P 8400 5350
 F 0 "RV1" H 8331 5304 50  0000 R CNN
 F 1 "10K" H 8331 5395 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Vishay_T73XW_Horizontal" H 8400 5350 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3386X_Horizontal" H 8400 5350 50  0001 C CNN
 F 3 "~" H 8400 5350 50  0001 C CNN
 	1    8400 5350
 	1    0    0    1   
@@ -87,7 +87,7 @@ L Connector:Conn_01x06_Male J6
 U 1 1 5F34B8F4
 P 1600 4650
 F 0 "J6" H 1700 4200 50  0000 C CNN
-F 1 "Conn_01x06_Male" H 1650 4100 50  0000 C CNN
+F 1 "Conn_ICSP" H 1650 4100 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 1600 4650 50  0001 C CNN
 F 3 "~" H 1600 4650 50  0001 C CNN
 	1    1600 4650
@@ -156,8 +156,6 @@ Text Notes 1050 7200 0    50   ~ 0
 GPIO/TRISA
 Text Label 1200 7050 2    50   ~ 0
 GP0
-Text Notes 1600 5050 0    50   ~ 0
-ISCP
 $Comp
 L Device:C C1
 U 1 1 5F34B974
@@ -209,7 +207,7 @@ L Connector:Conn_01x03_Male J1
 U 1 1 5F35378C
 P 1300 1150
 F 0 "J1" V 1454 962 50  0000 R CNN
-F 1 "Conn_01x03_Male" V 1250 950 50  0000 R CNN
+F 1 "Conn_GP0" V 1250 950 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1300 1150 50  0001 C CNN
 F 3 "~" H 1300 1150 50  0001 C CNN
 	1    1300 1150
@@ -301,7 +299,7 @@ L Connector:Conn_01x03_Male J2
 U 1 1 5F381940
 P 2950 1150
 F 0 "J2" V 3104 962 50  0000 R CNN
-F 1 "Conn_01x03_Male" V 2900 950 50  0000 R CNN
+F 1 "Conn_GP4" V 2900 950 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2950 1150 50  0001 C CNN
 F 3 "~" H 2950 1150 50  0001 C CNN
 	1    2950 1150
@@ -371,7 +369,7 @@ L Connector:Conn_01x03_Male J3
 U 1 1 5F388FA0
 P 1300 1750
 F 0 "J3" V 1454 1562 50  0000 R CNN
-F 1 "Conn_01x03_Male" V 1250 1550 50  0000 R CNN
+F 1 "Conn_GP1" V 1250 1550 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1300 1750 50  0001 C CNN
 F 3 "~" H 1300 1750 50  0001 C CNN
 	1    1300 1750
@@ -441,7 +439,7 @@ L Connector:Conn_01x03_Male J4
 U 1 1 5F38F70D
 P 3000 1800
 F 0 "J4" V 3154 1612 50  0000 R CNN
-F 1 "Conn_01x03_Male" V 2950 1600 50  0000 R CNN
+F 1 "Conn_GP5" V 2950 1600 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3000 1800 50  0001 C CNN
 F 3 "~" H 3000 1800 50  0001 C CNN
 	1    3000 1800
@@ -511,7 +509,7 @@ L Connector:Conn_01x03_Male J5
 U 1 1 5F39674A
 P 1250 2300
 F 0 "J5" V 1404 2112 50  0000 R CNN
-F 1 "Conn_01x03_Male" V 1200 2100 50  0000 R CNN
+F 1 "Conn_GP2" V 1200 2100 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1250 2300 50  0001 C CNN
 F 3 "~" H 1250 2300 50  0001 C CNN
 	1    1250 2300
@@ -890,7 +888,7 @@ U 1 1 5F353FBE
 P 3450 6800
 F 0 "J15" H 3507 7117 50  0000 C CNN
 F 1 "Barrel_Jack_Switch" H 3507 7026 50  0000 C CNN
-F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-063AH_Horizontal" H 3500 6760 50  0001 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal" H 3500 6760 50  0001 C CNN
 F 3 "~" H 3500 6760 50  0001 C CNN
 	1    3450 6800
 	1    0    0    -1  
@@ -1153,7 +1151,7 @@ L Connector:Conn_01x06_Male J13
 U 1 1 5F40173F
 P 5700 6400
 F 0 "J13" V 5762 6644 50  0000 L CNN
-F 1 "Conn_01x06_Male" V 5853 6644 50  0000 L CNN
+F 1 "Conn_5V" V 5853 6644 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 5700 6400 50  0001 C CNN
 F 3 "~" H 5700 6400 50  0001 C CNN
 	1    5700 6400
@@ -1164,7 +1162,7 @@ L Connector:Conn_01x06_Male J20
 U 1 1 5F402982
 P 5700 6900
 F 0 "J20" V 5762 7144 50  0000 L CNN
-F 1 "Conn_01x06_Male" V 5853 7144 50  0000 L CNN
+F 1 "Conn_GND" V 5853 7144 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 5700 6900 50  0001 C CNN
 F 3 "~" H 5700 6900 50  0001 C CNN
 	1    5700 6900
