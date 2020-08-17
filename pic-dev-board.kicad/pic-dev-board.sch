@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 2
 Title "PIC Development Board"
-Date "2020-08-13"
+Date "2020-08-17"
 Rev "1"
 Comp "Bernhard Bablok"
 Comment1 "https://github.com/bablokb/pcb-pic-devboard"
@@ -1146,84 +1146,6 @@ Text Notes 6850 1900 0    50   ~ 0
 from PIC
 Text Notes 8500 1900 0    50   ~ 0
 to LCD
-$Comp
-L Connector:Conn_01x06_Male J13
-U 1 1 5F40173F
-P 5700 6400
-F 0 "J13" V 5762 6644 50  0000 L CNN
-F 1 "Conn_5V" V 5853 6644 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 5700 6400 50  0001 C CNN
-F 3 "~" H 5700 6400 50  0001 C CNN
-	1    5700 6400
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:Conn_01x06_Male J20
-U 1 1 5F402982
-P 5700 6900
-F 0 "J20" V 5762 7144 50  0000 L CNN
-F 1 "Conn_GND" V 5853 7144 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 5700 6900 50  0001 C CNN
-F 3 "~" H 5700 6900 50  0001 C CNN
-	1    5700 6900
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+5V #PWR028
-U 1 1 5F403557
-P 5150 6600
-F 0 "#PWR028" H 5150 6450 50  0001 C CNN
-F 1 "+5V" H 5165 6773 50  0000 C CNN
-F 2 "" H 5150 6600 50  0001 C CNN
-F 3 "" H 5150 6600 50  0001 C CNN
-	1    5150 6600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR029
-U 1 1 5F403BD0
-P 5150 7100
-F 0 "#PWR029" H 5150 6850 50  0001 C CNN
-F 1 "GND" H 5155 6927 50  0000 C CNN
-F 2 "" H 5150 7100 50  0001 C CNN
-F 3 "" H 5150 7100 50  0001 C CNN
-	1    5150 7100
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5150 6600 5400 6600
-Connection ~ 5400 6600
-Wire Wire Line
-	5400 6600 5500 6600
-Connection ~ 5500 6600
-Wire Wire Line
-	5500 6600 5600 6600
-Connection ~ 5600 6600
-Wire Wire Line
-	5600 6600 5700 6600
-Connection ~ 5700 6600
-Wire Wire Line
-	5700 6600 5800 6600
-Connection ~ 5800 6600
-Wire Wire Line
-	5800 6600 5900 6600
-Wire Wire Line
-	5150 7100 5400 7100
-Connection ~ 5400 7100
-Wire Wire Line
-	5400 7100 5500 7100
-Connection ~ 5500 7100
-Wire Wire Line
-	5500 7100 5600 7100
-Connection ~ 5600 7100
-Wire Wire Line
-	5600 7100 5700 7100
-Connection ~ 5700 7100
-Wire Wire Line
-	5700 7100 5800 7100
-Connection ~ 5800 7100
-Wire Wire Line
-	5800 7100 5900 7100
 Wire Notes Line
 	5000 6300 6750 6300
 Wire Notes Line
@@ -1244,4 +1166,125 @@ Wire Notes Line
 	6700 2150 6700 600 
 Text Notes 7800 2100 0    50   ~ 0
 2x SN74HC595 shift register
+$Comp
+L Connector_Generic:Conn_02x15_Counter_Clockwise J13
+U 1 1 5F3C7703
+P 5950 6850
+F 0 "J13" V 6450 7000 50  0000 R CNN
+F 1 "Conn_5V_GND" V 6350 7150 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x15_P2.54mm_Vertical" H 5950 6850 50  0001 C CNN
+F 3 "~" H 5950 6850 50  0001 C CNN
+	1    5950 6850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR029
+U 1 1 5F3CE45A
+P 5150 7050
+F 0 "#PWR029" H 5150 6800 50  0001 C CNN
+F 1 "GND" H 5155 6877 50  0000 C CNN
+F 2 "" H 5150 7050 50  0001 C CNN
+F 3 "" H 5150 7050 50  0001 C CNN
+	1    5150 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR028
+U 1 1 5F3CEC58
+P 5150 6550
+F 0 "#PWR028" H 5150 6400 50  0001 C CNN
+F 1 "+5V" H 5165 6723 50  0000 C CNN
+F 2 "" H 5150 6550 50  0001 C CNN
+F 3 "" H 5150 6550 50  0001 C CNN
+	1    5150 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5150 6550 5250 6550
+Connection ~ 5250 6550
+Wire Wire Line
+	5250 6550 5350 6550
+Connection ~ 5350 6550
+Wire Wire Line
+	5350 6550 5450 6550
+Connection ~ 5450 6550
+Wire Wire Line
+	5450 6550 5550 6550
+Connection ~ 5550 6550
+Wire Wire Line
+	5550 6550 5650 6550
+Connection ~ 5650 6550
+Wire Wire Line
+	5650 6550 5750 6550
+Connection ~ 5750 6550
+Wire Wire Line
+	5750 6550 5850 6550
+Connection ~ 5850 6550
+Wire Wire Line
+	5850 6550 5950 6550
+Connection ~ 5950 6550
+Wire Wire Line
+	5950 6550 6050 6550
+Connection ~ 6050 6550
+Wire Wire Line
+	6050 6550 6150 6550
+Connection ~ 6150 6550
+Wire Wire Line
+	6150 6550 6250 6550
+Connection ~ 6250 6550
+Wire Wire Line
+	6250 6550 6350 6550
+Connection ~ 6350 6550
+Wire Wire Line
+	6350 6550 6450 6550
+Connection ~ 6450 6550
+Wire Wire Line
+	6450 6550 6550 6550
+Connection ~ 6550 6550
+Wire Wire Line
+	6550 6550 6650 6550
+Wire Wire Line
+	6650 7050 6550 7050
+Connection ~ 5250 7050
+Wire Wire Line
+	5250 7050 5150 7050
+Connection ~ 5350 7050
+Wire Wire Line
+	5350 7050 5250 7050
+Connection ~ 5450 7050
+Wire Wire Line
+	5450 7050 5350 7050
+Connection ~ 5550 7050
+Wire Wire Line
+	5550 7050 5450 7050
+Connection ~ 5650 7050
+Wire Wire Line
+	5650 7050 5550 7050
+Connection ~ 5750 7050
+Wire Wire Line
+	5750 7050 5650 7050
+Connection ~ 5850 7050
+Wire Wire Line
+	5850 7050 5750 7050
+Connection ~ 5950 7050
+Wire Wire Line
+	5950 7050 5850 7050
+Connection ~ 6050 7050
+Wire Wire Line
+	6050 7050 5950 7050
+Connection ~ 6150 7050
+Wire Wire Line
+	6150 7050 6050 7050
+Connection ~ 6250 7050
+Wire Wire Line
+	6250 7050 6150 7050
+Connection ~ 6350 7050
+Wire Wire Line
+	6350 7050 6250 7050
+Connection ~ 6450 7050
+Wire Wire Line
+	6450 7050 6350 7050
+Connection ~ 6550 7050
+Wire Wire Line
+	6550 7050 6450 7050
 $EndSCHEMATC
