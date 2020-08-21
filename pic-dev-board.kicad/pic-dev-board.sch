@@ -96,12 +96,12 @@ $EndComp
 $Comp
 L Connector:Conn_01x07_Male J8
 U 1 1 5F34B8FA
-P 1400 6850
-F 0 "J8" H 1600 6000 50  0000 R CNN
-F 1 "Conn_TRISA" H 1750 6100 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 1400 6850 50  0001 C CNN
-F 3 "~" H 1400 6850 50  0001 C CNN
-	1    1400 6850
+P 1100 6850
+F 0 "J8" H 1300 6000 50  0000 R CNN
+F 1 "Conn_TRISA" H 1450 6100 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 1100 6850 50  0001 C CNN
+F 3 "~" H 1100 6850 50  0001 C CNN
+	1    1100 6850
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -152,9 +152,9 @@ Wire Wire Line
 	2750 4900 2750 4550
 Wire Wire Line
 	3150 4700 3150 4450
-Text Notes 1050 7250 0    50   ~ 0
+Text Notes 750  7250 0    50   ~ 0
 GPIO/TRISA
-Text Label 1200 7150 2    50   ~ 0
+Text Label 900  7150 2    50   ~ 0
 GP0
 $Comp
 L Device:C C1
@@ -250,7 +250,7 @@ Text Label 2650 5300 2    50   ~ 0
 GP0
 Wire Wire Line
 	2750 5300 2750 5200
-Text Label 1200 7050 2    50   ~ 0
+Text Label 900  7050 2    50   ~ 0
 GP1
 Text Label 3250 5100 0    50   ~ 0
 GP1
@@ -260,13 +260,13 @@ Wire Wire Line
 	3150 5100 3150 5000
 Wire Wire Line
 	2650 5300 2750 5300
-Text Label 1200 6950 2    50   ~ 0
+Text Label 900  6950 2    50   ~ 0
 GP2
 Text Label 3700 4550 2    50   ~ 0
 GP2
-Text Label 1200 6850 2    50   ~ 0
+Text Label 900  6850 2    50   ~ 0
 GP4
-Text Label 1200 6750 2    50   ~ 0
+Text Label 900  6750 2    50   ~ 0
 GP5
 Text Label 1300 850  2    50   ~ 0
 GP0
@@ -688,17 +688,17 @@ GP5
 $Comp
 L Connector:Conn_01x06_Male J9
 U 1 1 5F386F08
-P 2000 6950
-F 0 "J9" H 2250 6000 50  0000 R CNN
-F 1 "Conn_TRISB" H 2350 6100 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 2000 6950 50  0001 C CNN
-F 3 "~" H 2000 6950 50  0001 C CNN
-	1    2000 6950
+P 2400 6950
+F 0 "J9" H 2650 6000 50  0000 R CNN
+F 1 "Conn_TRISB" H 2750 6100 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 2400 6950 50  0001 C CNN
+F 3 "~" H 2400 6950 50  0001 C CNN
+	1    2400 6950
 	-1   0    0    1   
 $EndComp
-Text Notes 1750 7250 0    50   ~ 0
+Text Notes 2150 7250 0    50   ~ 0
 TRISB
-Text Label 1800 7150 2    50   ~ 0
+Text Label 2200 7150 2    50   ~ 0
 RB4
 Text Label 3700 5050 2    50   ~ 0
 RB4
@@ -708,40 +708,40 @@ Text Label 3700 5250 2    50   ~ 0
 RB6
 Text Label 3700 5350 2    50   ~ 0
 RB7
-Text Label 1800 7050 2    50   ~ 0
+Text Label 2200 7050 2    50   ~ 0
 RB5
-Text Label 1800 6950 2    50   ~ 0
+Text Label 2200 6950 2    50   ~ 0
 RB6
-Text Label 1800 6850 2    50   ~ 0
+Text Label 2200 6850 2    50   ~ 0
 RB7
 $Comp
 L Connector:Conn_01x10_Male J7
 U 1 1 5F38A390
-P 2600 6750
-F 0 "J7" H 2750 6000 50  0000 C CNN
-F 1 "Conn_TRISC" H 2750 6100 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 2600 6750 50  0001 C CNN
-F 3 "~" H 2600 6750 50  0001 C CNN
-	1    2600 6750
+P 3000 6750
+F 0 "J7" H 3150 6000 50  0000 C CNN
+F 1 "Conn_TRISC" H 3150 6100 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 3000 6750 50  0001 C CNN
+F 3 "~" H 3000 6750 50  0001 C CNN
+	1    3000 6750
 	-1   0    0    1   
 $EndComp
-Text Notes 2350 7250 0    50   ~ 0
+Text Notes 2750 7250 0    50   ~ 0
 TRISC
-Text Label 2400 7150 2    50   ~ 0
+Text Label 2800 7150 2    50   ~ 0
 RC0
-Text Label 2400 7050 2    50   ~ 0
+Text Label 2800 7050 2    50   ~ 0
 RC1
-Text Label 2400 6950 2    50   ~ 0
+Text Label 2800 6950 2    50   ~ 0
 RC2
-Text Label 2400 6850 2    50   ~ 0
+Text Label 2800 6850 2    50   ~ 0
 RC3
-Text Label 2400 6750 2    50   ~ 0
+Text Label 2800 6750 2    50   ~ 0
 RC4
-Text Label 2400 6650 2    50   ~ 0
+Text Label 2800 6650 2    50   ~ 0
 RC5
-Text Label 2400 6550 2    50   ~ 0
+Text Label 2800 6550 2    50   ~ 0
 RC6
-Text Label 2400 6450 2    50   ~ 0
+Text Label 2800 6450 2    50   ~ 0
 RC7
 Text Label 6700 4350 0    50   ~ 0
 RC0
@@ -847,23 +847,23 @@ Wire Wire Line
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5F3F0293
-P 4250 6900
-F 0 "#FLG0101" H 4250 6975 50  0001 C CNN
-F 1 "PWR_FLAG" V 4250 7028 50  0000 L CNN
-F 2 "" H 4250 6900 50  0001 C CNN
-F 3 "~" H 4250 6900 50  0001 C CNN
-	1    4250 6900
+P 4300 6900
+F 0 "#FLG0101" H 4300 6975 50  0001 C CNN
+F 1 "PWR_FLAG" V 4300 7028 50  0000 L CNN
+F 2 "" H 4300 6900 50  0001 C CNN
+F 3 "~" H 4300 6900 50  0001 C CNN
+	1    4300 6900
 	0    1    1    0   
 $EndComp
 $Comp
 L power:PWR_FLAG #FLG0102
 U 1 1 5F3F0E86
-P 4300 6650
-F 0 "#FLG0102" H 4300 6725 50  0001 C CNN
-F 1 "PWR_FLAG" H 4300 6823 50  0000 C CNN
-F 2 "" H 4300 6650 50  0001 C CNN
-F 3 "~" H 4300 6650 50  0001 C CNN
-	1    4300 6650
+P 4350 6650
+F 0 "#FLG0102" H 4350 6725 50  0001 C CNN
+F 1 "PWR_FLAG" H 4350 6823 50  0000 C CNN
+F 2 "" H 4350 6650 50  0001 C CNN
+F 3 "~" H 4350 6650 50  0001 C CNN
+	1    4350 6650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -885,55 +885,55 @@ Wire Wire Line
 $Comp
 L Connector:Barrel_Jack_Switch J15
 U 1 1 5F353FBE
-P 3450 6800
-F 0 "J15" H 3507 7117 50  0000 C CNN
-F 1 "Barrel_Jack_Switch" H 3507 7026 50  0000 C CNN
-F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal" H 3500 6760 50  0001 C CNN
-F 3 "~" H 3500 6760 50  0001 C CNN
-	1    3450 6800
+P 3500 6800
+F 0 "J15" H 3557 7117 50  0000 C CNN
+F 1 "Barrel_Jack_Switch" H 3557 7026 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal" H 3550 6760 50  0001 C CNN
+F 3 "~" H 3550 6760 50  0001 C CNN
+	1    3500 6800
 	1    0    0    -1  
 $EndComp
-NoConn ~ 3750 6800
+NoConn ~ 3800 6800
 $Comp
 L power:GND #PWR0103
 U 1 1 5F362EB6
-P 4000 7100
-F 0 "#PWR0103" H 4000 6850 50  0001 C CNN
-F 1 "GND" H 4005 6927 50  0000 C CNN
-F 2 "" H 4000 7100 50  0001 C CNN
-F 3 "" H 4000 7100 50  0001 C CNN
-	1    4000 7100
+P 4050 7100
+F 0 "#PWR0103" H 4050 6850 50  0001 C CNN
+F 1 "GND" H 4055 6927 50  0000 C CNN
+F 2 "" H 4050 7100 50  0001 C CNN
+F 3 "" H 4050 7100 50  0001 C CNN
+	1    4050 7100
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR0104
 U 1 1 5F363A77
-P 4000 6550
-F 0 "#PWR0104" H 4000 6400 50  0001 C CNN
-F 1 "+5V" H 4015 6723 50  0000 C CNN
-F 2 "" H 4000 6550 50  0001 C CNN
-F 3 "" H 4000 6550 50  0001 C CNN
-	1    4000 6550
+P 4050 6550
+F 0 "#PWR0104" H 4050 6400 50  0001 C CNN
+F 1 "+5V" H 4065 6723 50  0000 C CNN
+F 2 "" H 4050 6550 50  0001 C CNN
+F 3 "" H 4050 6550 50  0001 C CNN
+	1    4050 6550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3750 6700 4000 6700
+	3800 6700 4050 6700
 Wire Wire Line
-	4000 6700 4000 6550
+	4050 6700 4050 6550
 Wire Wire Line
-	3750 6900 4000 6900
+	3800 6900 4050 6900
 Wire Wire Line
-	4000 6900 4000 7100
+	4050 6900 4050 7100
 Wire Wire Line
-	4000 6700 4300 6700
+	4050 6700 4350 6700
 Wire Wire Line
-	4300 6700 4300 6650
-Connection ~ 4000 6700
+	4350 6700 4350 6650
+Connection ~ 4050 6700
 Wire Wire Line
 	5200 5650 5200 5850
 Wire Wire Line
-	4000 6900 4250 6900
-Connection ~ 4000 6900
+	4050 6900 4300 6900
+Connection ~ 4050 6900
 $Comp
 L Connector:Conn_01x02_Male J16
 U 1 1 5F36E374
@@ -1122,15 +1122,7 @@ Wire Notes Line
 	600  2500 600  600 
 Text Notes 2950 2450 0    50   ~ 0
 LEDs or pullups for GP0-GP5
-Wire Notes Line
-	850  5900 2800 5900
-Wire Notes Line
-	2800 5900 2800 7400
-Wire Notes Line
-	2800 7400 850  7400
-Wire Notes Line
-	850  7400 850  5900
-Text Notes 1950 7350 0    50   ~ 0
+Text Notes 2300 7400 0    50   ~ 0
 External connectors
 Text Notes 8950 6000 0    50   ~ 0
 LCD 1602 connected to first shift-register
@@ -1290,51 +1282,94 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0105
 U 1 1 5F3EAAD0
-P 1000 6350
-F 0 "#PWR0105" H 1000 6100 50  0001 C CNN
-F 1 "GND" H 950 6200 50  0000 C CNN
-F 2 "" H 1000 6350 50  0001 C CNN
-F 3 "" H 1000 6350 50  0001 C CNN
-	1    1000 6350
+P 700 6350
+F 0 "#PWR0105" H 700 6100 50  0001 C CNN
+F 1 "GND" H 650 6200 50  0000 C CNN
+F 2 "" H 700 6350 50  0001 C CNN
+F 3 "" H 700 6350 50  0001 C CNN
+	1    700  6350
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR0106
 U 1 1 5F3EB6C7
-P 1000 6250
-F 0 "#PWR0106" H 1000 6100 50  0001 C CNN
-F 1 "+5V" H 950 6400 50  0000 C CNN
-F 2 "" H 1000 6250 50  0001 C CNN
-F 3 "" H 1000 6250 50  0001 C CNN
-	1    1000 6250
+P 700 6250
+F 0 "#PWR0106" H 700 6100 50  0001 C CNN
+F 1 "+5V" H 650 6400 50  0000 C CNN
+F 2 "" H 700 6250 50  0001 C CNN
+F 3 "" H 700 6250 50  0001 C CNN
+	1    700  6250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1000 6350 1100 6350
+	700  6350 800  6350
 Wire Wire Line
-	1100 6350 1100 6650
+	800  6350 800  6650
 Wire Wire Line
-	1100 6650 1200 6650
+	800  6650 900  6650
 Wire Wire Line
-	1100 6350 1700 6350
-Connection ~ 1100 6350
+	1500 6350 2100 6350
 Wire Wire Line
-	1000 6250 1200 6250
+	700  6250 900  6250
 Wire Wire Line
-	1200 6250 1200 6550
-Connection ~ 1200 6250
+	900  6250 900  6550
 Wire Wire Line
-	1200 6250 1800 6250
+	2200 6750 2100 6750
 Wire Wire Line
-	1800 6750 1700 6750
+	2100 6750 2100 6350
+Connection ~ 2100 6350
 Wire Wire Line
-	1700 6750 1700 6350
-Connection ~ 1700 6350
+	2100 6350 2800 6350
 Wire Wire Line
-	1700 6350 2400 6350
+	2200 6650 2200 6250
+Connection ~ 2200 6250
 Wire Wire Line
-	1800 6650 1800 6250
-Connection ~ 1800 6250
+	2200 6250 2800 6250
+$Comp
+L Connector:Conn_01x07_Male J20
+U 1 1 5F440DA1
+P 1750 6850
+F 0 "J20" H 1950 6000 50  0000 R CNN
+F 1 "Conn_TRISA" H 2100 6100 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 1750 6850 50  0001 C CNN
+F 3 "~" H 1750 6850 50  0001 C CNN
+	1    1750 6850
+	-1   0    0    1   
+$EndComp
+Text Notes 1400 7250 0    50   ~ 0
+GPIO/TRISA
+Text Label 1550 7150 2    50   ~ 0
+GP0
+Text Label 1550 7050 2    50   ~ 0
+GP1
+Text Label 1550 6950 2    50   ~ 0
+GP2
+Text Label 1550 6850 2    50   ~ 0
+GP4
+Text Label 1550 6750 2    50   ~ 0
+GP5
 Wire Wire Line
-	1800 6250 2400 6250
+	1550 6550 1550 6250
+Wire Wire Line
+	1550 6250 2200 6250
+Wire Wire Line
+	1550 6250 900  6250
+Connection ~ 1550 6250
+Connection ~ 900  6250
+Wire Wire Line
+	1550 6650 1500 6650
+Wire Wire Line
+	1500 6650 1500 6350
+Wire Wire Line
+	1500 6350 800  6350
+Connection ~ 1500 6350
+Connection ~ 800  6350
+Wire Notes Line
+	3100 5900 550  5900
+Wire Notes Line
+	550  5900 550  7450
+Wire Notes Line
+	550  7450 3100 7450
+Wire Notes Line
+	3100 7450 3100 5900
 $EndSCHEMATC
