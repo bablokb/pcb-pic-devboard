@@ -1172,7 +1172,7 @@ U 1 1 5F3C7703
 P 5950 6850
 F 0 "J13" V 6450 7000 50  0000 R CNN
 F 1 "Conn_5V_GND" V 6350 7150 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x15_P2.54mm_Vertical" H 5950 6850 50  0001 C CNN
+F 2 "user:PinHeader_2x15_P2.54mm_Vertical_Slim" H 5950 6850 50  0001 C CNN
 F 3 "~" H 5950 6850 50  0001 C CNN
 	1    5950 6850
 	0    -1   -1   0   
