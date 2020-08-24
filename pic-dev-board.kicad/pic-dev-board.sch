@@ -1023,11 +1023,7 @@ F 3 "~" H 4850 1600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	5000 1250 5050 1250
-Wire Wire Line
 	5200 1250 5200 1150
-Wire Wire Line
-	5000 1600 5150 1600
 Wire Wire Line
 	5300 1600 5300 1150
 $Comp
@@ -1086,20 +1082,14 @@ Text Label 6150 1100 0    50   ~ 0
 SCL
 Text Label 6150 1750 0    50   ~ 0
 SDA
-Text Label 5050 1400 0    50   ~ 0
+Text Label 5100 1750 0    50   ~ 0
 SCL
-Text Label 5150 1750 0    50   ~ 0
+Text Label 5050 1400 0    50   ~ 0
 SDA
 Wire Wire Line
+	5100 1750 5100 1600
+Wire Wire Line
 	5050 1400 5050 1250
-Connection ~ 5050 1250
-Wire Wire Line
-	5050 1250 5200 1250
-Wire Wire Line
-	5150 1750 5150 1600
-Connection ~ 5150 1600
-Wire Wire Line
-	5150 1600 5300 1600
 Wire Notes Line
 	6500 2150 6500 600 
 Wire Notes Line
@@ -1380,4 +1370,14 @@ Connection ~ 2300 4050
 Connection ~ 2300 4850
 Wire Wire Line
 	2300 4850 2550 4850
+Wire Wire Line
+	5000 1250 5050 1250
+Connection ~ 5050 1250
+Wire Wire Line
+	5050 1250 5200 1250
+Wire Wire Line
+	5000 1600 5100 1600
+Connection ~ 5100 1600
+Wire Wire Line
+	5100 1600 5300 1600
 $EndSCHEMATC
