@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 2
 Title "PIC Development Board"
-Date "2020-08-21"
-Rev "1"
+Date "2020-08-24"
+Rev "2"
 Comp "Bernhard Bablok"
 Comment1 "https://github.com/bablokb/pcb-pic-devboard"
 Comment2 ""
@@ -678,7 +678,7 @@ Connection ~ 2750 4550
 Wire Wire Line
 	2550 4650 2550 4850
 Wire Wire Line
-	1800 4850 2550 4850
+	1800 4850 2300 4850
 Wire Wire Line
 	2550 4650 3700 4650
 Text Label 3700 4750 2    50   ~ 0
@@ -858,12 +858,12 @@ $EndComp
 $Comp
 L power:PWR_FLAG #FLG0102
 U 1 1 5F3F0E86
-P 4350 6650
-F 0 "#FLG0102" H 4350 6725 50  0001 C CNN
-F 1 "PWR_FLAG" H 4350 6823 50  0000 C CNN
-F 2 "" H 4350 6650 50  0001 C CNN
-F 3 "~" H 4350 6650 50  0001 C CNN
-	1    4350 6650
+P 4350 6500
+F 0 "#FLG0102" H 4350 6575 50  0001 C CNN
+F 1 "PWR_FLAG" H 4350 6673 50  0000 C CNN
+F 2 "" H 4350 6500 50  0001 C CNN
+F 3 "~" H 4350 6500 50  0001 C CNN
+	1    4350 6500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -926,8 +926,6 @@ Wire Wire Line
 	4050 6900 4050 7100
 Wire Wire Line
 	4050 6700 4350 6700
-Wire Wire Line
-	4350 6700 4350 6650
 Connection ~ 4050 6700
 Wire Wire Line
 	5200 5650 5200 5850
@@ -1372,4 +1370,14 @@ Wire Notes Line
 	550  7450 3100 7450
 Wire Notes Line
 	3100 7450 3100 5900
+Text Label 4350 6700 0    50   ~ 0
+Vdd
+Wire Wire Line
+	4350 6500 4350 6700
+Wire Wire Line
+	2300 4050 2300 4850
+Connection ~ 2300 4050
+Connection ~ 2300 4850
+Wire Wire Line
+	2300 4850 2550 4850
 $EndSCHEMATC
