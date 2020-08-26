@@ -585,17 +585,6 @@ $EndSheet
 Wire Wire Line
 	1800 4650 2100 4650
 NoConn ~ 1800 4350
-$Comp
-L power:+5V #PWR013
-U 1 1 5F36CAAF
-P 5200 3400
-F 0 "#PWR013" H 5200 3250 50  0001 C CNN
-F 1 "+5V" H 5215 3573 50  0000 C CNN
-F 2 "" H 5200 3400 50  0001 C CNN
-F 3 "" H 5200 3400 50  0001 C CNN
-	1    5200 3400
-	1    0    0    -1  
-$EndComp
 Text Label 5350 4050 0    50   ~ 0
 Vdd
 Wire Wire Line
@@ -932,17 +921,6 @@ Wire Wire Line
 Wire Wire Line
 	4050 6900 4300 6900
 Connection ~ 4050 6900
-$Comp
-L Connector:Conn_01x02_Male J16
-U 1 1 5F36E374
-P 5400 3500
-F 0 "J16" H 5372 3376 50  0000 R CNN
-F 1 "RUN/~PGM" H 5372 3474 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5400 3500 50  0001 C CNN
-F 3 "~" H 5400 3500 50  0001 C CNN
-	1    5400 3500
-	-1   0    0    1   
-$EndComp
 $Comp
 L Connector:Conn_01x04_Male J17
 U 1 1 5F37419B
@@ -1342,8 +1320,6 @@ Wire Notes Line
 	550  7450 3100 7450
 Wire Notes Line
 	3100 7450 3100 5900
-Text Label 4350 6700 0    50   ~ 0
-Vdd
 Wire Wire Line
 	4350 6500 4350 6700
 Wire Wire Line
@@ -1363,5 +1339,43 @@ Connection ~ 5100 1600
 Wire Wire Line
 	5100 1600 5300 1600
 Wire Wire Line
-	5200 3500 5200 4050
+	5200 3750 5200 4050
+Wire Wire Line
+	5200 3500 5200 3750
+Connection ~ 5200 3750
+Wire Wire Line
+	5350 3750 5200 3750
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 5F47637D
+P 5350 3750
+F 0 "#FLG0104" H 5350 3825 50  0001 C CNN
+F 1 "PWR_FLAG" V 5350 3878 50  0000 L CNN
+F 2 "" H 5350 3750 50  0001 C CNN
+F 3 "~" H 5350 3750 50  0001 C CNN
+	1    5350 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+5V #PWR013
+U 1 1 5F36CAAF
+P 5200 3400
+F 0 "#PWR013" H 5200 3250 50  0001 C CNN
+F 1 "+5V" H 5215 3573 50  0000 C CNN
+F 2 "" H 5200 3400 50  0001 C CNN
+F 3 "" H 5200 3400 50  0001 C CNN
+	1    5200 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J16
+U 1 1 5F36E374
+P 5400 3500
+F 0 "J16" H 5372 3376 50  0000 R CNN
+F 1 "RUN/~PGM" H 5372 3474 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5400 3500 50  0001 C CNN
+F 3 "~" H 5400 3500 50  0001 C CNN
+	1    5400 3500
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
