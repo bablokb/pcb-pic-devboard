@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 2
 Title "PIC Development Board"
-Date "2020-08-24"
+Date "2020-08-26"
 Rev "2"
 Comp "Bernhard Bablok"
 Comment1 "https://github.com/bablokb/pcb-pic-devboard"
@@ -943,24 +943,6 @@ F 3 "~" H 5400 3500 50  0001 C CNN
 	1    5400 3500
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	5200 3500 5200 3800
-$Comp
-L power:PWR_FLAG #FLG0104
-U 1 1 5F37108D
-P 5450 3800
-F 0 "#FLG0104" H 5450 3875 50  0001 C CNN
-F 1 "PWR_FLAG" V 5450 4150 50  0000 C CNN
-F 2 "" H 5450 3800 50  0001 C CNN
-F 3 "~" H 5450 3800 50  0001 C CNN
-	1    5450 3800
-	0    1    1    0   
-$EndComp
-Connection ~ 5200 3800
-Wire Wire Line
-	5200 3800 5200 4050
-Wire Wire Line
-	5200 3800 5450 3800
 $Comp
 L Connector:Conn_01x04_Male J17
 U 1 1 5F37419B
@@ -1380,4 +1362,6 @@ Wire Wire Line
 Connection ~ 5100 1600
 Wire Wire Line
 	5100 1600 5300 1600
+Wire Wire Line
+	5200 3500 5200 4050
 $EndSCHEMATC
