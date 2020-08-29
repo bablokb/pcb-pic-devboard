@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 2
 Title "PIC Development Board"
-Date "2020-08-26"
-Rev "2"
+Date "2020-08-29"
+Rev "3"
 Comp "Bernhard Bablok"
 Comment1 "https://github.com/bablokb/pcb-pic-devboard"
 Comment2 ""
@@ -558,7 +558,7 @@ U 1 1 5F3B03E7
 P 5200 4850
 F 0 "U1" H 4300 5750 50  0000 C CNN
 F 1 "PIC16F690-IP" H 4300 5650 50  0000 C CNN
-F 2 "Package_DIP:DIP-20_W7.62mm_Socket" H 5200 4850 50  0001 C CIN
+F 2 "Socket:DIP_Socket-20_W4.3_W5.08_W7.62_W10.16_W10.9_3M_220-3342-00-0602J" H 5200 4850 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/41262E.pdf" H 5200 4850 50  0001 C CNN
 	1    5200 4850
 	-1   0    0    -1  
