@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "PIC12-Development Breadboard-PCB"
-Date "2020-08-30"
+Date "2020-08-31"
 Rev "1"
 Comp "Bernhard Bablok"
 Comment1 "https://github.com/bablokb/pcb-pic-devboard"
@@ -147,9 +147,9 @@ Text Label 7850 3800 2    50   ~ 0
 GP1
 Text Label 7850 3900 2    50   ~ 0
 GP2
-Text Label 6350 3550 0    50   ~ 0
+Text Label 6800 3550 0    50   ~ 0
 GP4
-Text Label 6350 3650 0    50   ~ 0
+Text Label 6800 3650 0    50   ~ 0
 GP5
 Text Label 5150 3650 2    50   ~ 0
 GP2
@@ -253,4 +253,53 @@ Text Label 9000 3800 0    50   ~ 0
 GP1
 Text Label 9000 3900 0    50   ~ 0
 GP2
+$Comp
+L Connector:Conn_01x05_Male J4
+U 1 1 5F4D3DB1
+P 2450 3350
+F 0 "J4" H 2550 2900 50  0000 C CNN
+F 1 "Conn_SR" H 2550 3000 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 2450 3350 50  0001 C CNN
+F 3 "~" H 2450 3350 50  0001 C CNN
+	1    2450 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5F4D4AE2
+P 2050 3100
+F 0 "#PWR0103" H 2050 2850 50  0001 C CNN
+F 1 "GND" V 2055 2972 50  0000 R CNN
+F 2 "" H 2050 3100 50  0001 C CNN
+F 3 "" H 2050 3100 50  0001 C CNN
+	1    2050 3100
+	-1   0    0    1   
+$EndComp
+Text Label 2250 3250 2    50   ~ 0
+RCLK
+Text Label 2250 3350 2    50   ~ 0
+SCLK
+Text Label 2250 3450 2    50   ~ 0
+DAT
+Text Label 2250 3550 2    50   ~ 0
++5V
+Wire Wire Line
+	2250 3150 2050 3150
+Wire Wire Line
+	2050 3150 2050 3100
+Wire Wire Line
+	6350 3650 6800 3650
+Wire Wire Line
+	6350 3550 6800 3550
+Text Label 5150 3800 2    50   ~ 0
+DAT
+Wire Wire Line
+	5150 3800 5150 3650
+Text Label 4250 3700 2    50   ~ 0
+SCLK
+Wire Wire Line
+	4250 3700 4250 3550
+Text Label 2550 3250 0    50   ~ 0
+RCLK
+NoConn ~ 2550 3250
 $EndSCHEMATC
