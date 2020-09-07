@@ -1,4 +1,4 @@
-update=Di 18 Aug 2020 18:51:38 CEST
+update=Mo 07 Sep 2020 09:28:27 CEST
 last_client=kicad
 [schematic_editor]
 version=1
