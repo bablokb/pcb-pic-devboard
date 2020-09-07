@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 2
 Title "PIC Development Board"
-Date "2020-08-29"
-Rev "3"
+Date "2020-09-07"
+Rev "4"
 Comp "Bernhard Bablok"
 Comment1 "https://github.com/bablokb/pcb-pic-devboard"
 Comment2 ""
@@ -1378,4 +1378,97 @@ F 3 "~" H 5400 3500 50  0001 C CNN
 	1    5400 3500
 	-1   0    0    1   
 $EndComp
+$Comp
+L Proto_Area:SO-8-ProtoArea U4
+U 1 1 5F568960
+P 7900 2850
+F 0 "U4" H 7900 3317 50  0000 C CNN
+F 1 "SO-8-ProtoArea" H 7900 3226 50  0000 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 7950 3400 50  0001 L CNN
+F 3 "https://www.st.com/resource/en/datasheet/stm8s001j3.pdf" H 7800 2950 50  0001 C CNN
+	1    7900 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J22
+U 1 1 5F569B84
+P 7050 2900
+F 0 "J22" H 7022 2782 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 7400 2550 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7050 2900 50  0001 C CNN
+F 3 "~" H 7050 2900 50  0001 C CNN
+	1    7050 2900
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J21
+U 1 1 5F56ABAF
+P 8750 2800
+F 0 "J21" H 8722 2774 50  0000 R CNN
+F 1 "Conn_01x04_Male" H 9150 3050 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 8750 2800 50  0001 C CNN
+F 3 "~" H 8750 2800 50  0001 C CNN
+	1    8750 2800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 2700 8550 2700
+Wire Wire Line
+	8300 2800 8550 2800
+Wire Wire Line
+	8300 2900 8550 2900
+Wire Wire Line
+	8300 3000 8550 3000
+Wire Wire Line
+	7500 2700 7250 2700
+Wire Wire Line
+	7500 2800 7250 2800
+Wire Wire Line
+	7500 2900 7250 2900
+Wire Wire Line
+	7500 3000 7250 3000
+$Comp
+L Proto_Area:SOT-223-ProtoArea U5
+U 1 1 5F5AEBE3
+P 9700 2700
+F 0 "U5" H 9700 2942 50  0000 C CNN
+F 1 "SOT-223-ProtoArea" H 9600 2850 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223" H 9650 3050 50  0001 C CNN
+F 3 "" H 9800 2450 50  0001 C CNN
+	1    9700 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J23
+U 1 1 5F5AFD4C
+P 10400 2800
+F 0 "J23" H 10550 3200 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 10750 3050 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 10400 2800 50  0001 C CNN
+F 3 "~" H 10400 2800 50  0001 C CNN
+	1    10400 2800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 2700 10200 2700
+Wire Wire Line
+	10000 2850 10200 2850
+Wire Wire Line
+	10200 2850 10200 2800
+Wire Wire Line
+	9400 2750 9400 3050
+Wire Wire Line
+	9400 3050 10200 3050
+Wire Wire Line
+	10200 3050 10200 2900
+Wire Notes Line
+	6700 2250 6700 3350
+Wire Notes Line
+	6700 3350 10850 3350
+Wire Notes Line
+	10850 3350 10850 2250
+Wire Notes Line
+	10850 2250 6700 2250
+Text Notes 9300 3300 0    50   ~ 0
+Unspecified components for prototyping
 $EndSCHEMATC
