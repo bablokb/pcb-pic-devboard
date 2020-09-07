@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "PIC12-Development Breadboard-PCB"
-Date "2020-08-31"
-Rev "1"
+Date "2020-09-07"
+Rev "2"
 Comp "Bernhard Bablok"
 Comment1 "https://github.com/bablokb/pcb-pic-devboard"
 Comment2 ""
