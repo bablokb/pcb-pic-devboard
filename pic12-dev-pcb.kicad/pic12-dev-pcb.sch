@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "PIC12-Development Breadboard-PCB"
 Date "2020-09-07"
-Rev "2"
+Rev "3"
 Comp "Bernhard Bablok"
 Comment1 "https://github.com/bablokb/pcb-pic-devboard"
 Comment2 ""
@@ -83,20 +83,6 @@ F 3 "~" H 6600 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG0102
-U 1 1 5F05C8DC
-P 4850 4050
-F 0 "#FLG0102" H 4850 4125 50  0001 C CNN
-F 1 "PWR_FLAG" V 4850 4177 50  0000 L CNN
-F 2 "" H 4850 4050 50  0001 C CNN
-F 3 "~" H 4850 4050 50  0001 C CNN
-	1    4850 4050
-	0    -1   -1   0   
-$EndComp
-Connection ~ 4850 4050
-Wire Wire Line
-	4850 4050 4850 4150
-$Comp
 L Device:C C1
 U 1 1 5F062C50
 P 5750 2550
@@ -123,12 +109,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0102
 U 1 1 5F0642E9
-P 4850 3900
-F 0 "#PWR0102" H 4850 3650 50  0001 C CNN
-F 1 "GND" V 4855 3772 50  0000 R CNN
-F 2 "" H 4850 3900 50  0001 C CNN
-F 3 "" H 4850 3900 50  0001 C CNN
-	1    4850 3900
+P 5150 5300
+F 0 "#PWR0102" H 5150 5050 50  0001 C CNN
+F 1 "GND" V 5155 5172 50  0000 R CNN
+F 2 "" H 5150 5300 50  0001 C CNN
+F 3 "" H 5150 5300 50  0001 C CNN
+	1    5150 5300
 	0    1    1    0   
 $EndComp
 Text Notes 4250 3300 2    63   ~ 0
@@ -217,13 +203,8 @@ F 3 "~" H 4550 3550 50  0001 C CNN
 	1    4550 3550
 	0    1    1    0   
 $EndComp
-Connection ~ 4850 3900
-Wire Wire Line
-	4850 3900 4850 4050
 Wire Wire Line
 	4250 3450 4400 3450
-Wire Wire Line
-	4850 3050 4850 3900
 Wire Wire Line
 	4250 3550 4400 3550
 $Comp
@@ -280,7 +261,7 @@ RCLK
 Text Label 2250 3350 2    50   ~ 0
 SCLK
 Text Label 2250 3450 2    50   ~ 0
-DAT
+GP2
 Text Label 2250 3550 2    50   ~ 0
 +5V
 Wire Wire Line
@@ -291,10 +272,6 @@ Wire Wire Line
 	6350 3650 6800 3650
 Wire Wire Line
 	6350 3550 6800 3550
-Text Label 5150 3800 2    50   ~ 0
-DAT
-Wire Wire Line
-	5150 3800 5150 3650
 Text Label 4250 3700 2    50   ~ 0
 SCLK
 Wire Wire Line
@@ -302,4 +279,86 @@ Wire Wire Line
 Text Label 2550 3250 0    50   ~ 0
 RCLK
 NoConn ~ 2550 3250
+Text Notes 1850 3450 0    50   ~ 0
+SERin
+$Comp
+L Connector:USB_B_Micro J5
+U 1 1 5F569D9B
+P 5900 5300
+F 0 "J5" V 5911 5630 50  0000 L CNN
+F 1 "USB_B_Micro" V 6002 5630 50  0000 L CNN
+F 2 "" H 6050 5250 50  0001 C CNN
+F 3 "~" H 6050 5250 50  0001 C CNN
+	1    5900 5300
+	0    1    1    0   
+$EndComp
+NoConn ~ 5700 5600
+NoConn ~ 5800 5600
+NoConn ~ 5900 5600
+Text Label 6200 5700 0    50   ~ 0
++5V
+Wire Wire Line
+	6200 5700 6100 5700
+Wire Wire Line
+	6100 5700 6100 5600
+Wire Wire Line
+	5500 5300 5400 5300
+Wire Wire Line
+	5500 5200 5400 5200
+Wire Wire Line
+	5400 5200 5400 5300
+Connection ~ 5400 5300
+Wire Wire Line
+	4850 3050 4850 4150
+Wire Wire Line
+	5150 5300 5400 5300
+$Comp
+L Connector:Conn_01x02_Male J6
+U 1 1 5F57072D
+P 1950 4500
+F 0 "J6" H 2050 4800 50  0000 C CNN
+F 1 "Conn_BB1" H 2050 4650 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Horizontal" H 1950 4500 50  0001 C CNN
+F 3 "~" H 1950 4500 50  0001 C CNN
+	1    1950 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J7
+U 1 1 5F570C00
+P 2750 4600
+F 0 "J7" H 2900 4250 50  0000 R CNN
+F 1 "Conn_BB2" H 2950 4350 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Horizontal" H 2750 4600 50  0001 C CNN
+F 3 "~" H 2750 4600 50  0001 C CNN
+	1    2750 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5F5716E2
+P 2400 4750
+F 0 "#PWR0104" H 2400 4500 50  0001 C CNN
+F 1 "GND" V 2405 4622 50  0000 R CNN
+F 2 "" H 2400 4750 50  0001 C CNN
+F 3 "" H 2400 4750 50  0001 C CNN
+	1    2400 4750
+	0    -1   -1   0   
+$EndComp
+Text Label 2250 4750 2    50   ~ 0
++5V
+Wire Wire Line
+	2250 4750 2250 4600
+Wire Wire Line
+	2250 4600 2150 4600
+Wire Wire Line
+	2250 4600 2550 4600
+Connection ~ 2250 4600
+Wire Wire Line
+	2400 4750 2400 4500
+Wire Wire Line
+	2400 4500 2550 4500
+Wire Wire Line
+	2400 4500 2150 4500
+Connection ~ 2400 4500
 $EndSCHEMATC
