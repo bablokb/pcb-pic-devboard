@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "PIC12-Development Breadboard-PCB"
-Date "2020-09-07"
+Date "2020-09-19"
 Rev "3"
 Comp "Bernhard Bablok"
 Comment1 "https://github.com/bablokb/pcb-pic-devboard"
@@ -30,7 +30,7 @@ U 1 1 5F048299
 P 4350 3050
 F 0 "J1" H 4242 2625 50  0000 C CNN
 F 1 "PGM-Conn" H 4242 2716 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 4350 3050 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 4350 3050 50  0001 C CNN
 F 3 "~" H 4350 3050 50  0001 C CNN
 	1    4350 3050
 	-1   0    0    1   
@@ -109,12 +109,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0102
 U 1 1 5F0642E9
-P 5150 5300
-F 0 "#PWR0102" H 5150 5050 50  0001 C CNN
-F 1 "GND" V 5155 5172 50  0000 R CNN
-F 2 "" H 5150 5300 50  0001 C CNN
-F 3 "" H 5150 5300 50  0001 C CNN
-	1    5150 5300
+P 5600 4750
+F 0 "#PWR0102" H 5600 4500 50  0001 C CNN
+F 1 "GND" V 5605 4622 50  0000 R CNN
+F 2 "" H 5600 4750 50  0001 C CNN
+F 3 "" H 5600 4750 50  0001 C CNN
+	1    5600 4750
 	0    1    1    0   
 $EndComp
 Text Notes 4250 3300 2    63   ~ 0
@@ -127,11 +127,11 @@ Text Label 7850 3500 2    50   ~ 0
 +5V
 Text Label 7850 3600 2    50   ~ 0
 GND
-Text Label 7850 3700 2    50   ~ 0
+Text Label 7850 3900 2    50   ~ 0
 GP0
 Text Label 7850 3800 2    50   ~ 0
 GP1
-Text Label 7850 3900 2    50   ~ 0
+Text Label 7850 3700 2    50   ~ 0
 GP2
 Text Label 6800 3550 0    50   ~ 0
 GP4
@@ -175,11 +175,11 @@ Text Label 8500 3500 2    50   ~ 0
 +5V
 Text Label 8500 3600 2    50   ~ 0
 GND
-Text Label 8500 3700 2    50   ~ 0
+Text Label 8500 3900 2    50   ~ 0
 GP0
 Text Label 8500 3800 2    50   ~ 0
 GP1
-Text Label 8500 3900 2    50   ~ 0
+Text Label 8500 3700 2    50   ~ 0
 GP2
 $Comp
 L Device:R R1
@@ -228,23 +228,12 @@ Text Label 9000 3500 0    50   ~ 0
 +5V
 Text Label 9000 3600 0    50   ~ 0
 GND
-Text Label 9000 3700 0    50   ~ 0
+Text Label 9000 3900 0    50   ~ 0
 GP0
 Text Label 9000 3800 0    50   ~ 0
 GP1
-Text Label 9000 3900 0    50   ~ 0
+Text Label 9000 3700 0    50   ~ 0
 GP2
-$Comp
-L Connector:Conn_01x05_Male J4
-U 1 1 5F4D3DB1
-P 2450 3350
-F 0 "J4" H 2550 2900 50  0000 C CNN
-F 1 "Conn_SR" H 2550 3000 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 2450 3350 50  0001 C CNN
-F 3 "~" H 2450 3350 50  0001 C CNN
-	1    2450 3350
-	-1   0    0    1   
-$EndComp
 $Comp
 L power:GND #PWR0103
 U 1 1 5F4D4AE2
@@ -281,84 +270,84 @@ RCLK
 NoConn ~ 2550 3250
 Text Notes 1850 3450 0    50   ~ 0
 SERin
-$Comp
-L Connector:USB_B_Micro J5
-U 1 1 5F569D9B
-P 5900 5300
-F 0 "J5" V 5911 5630 50  0000 L CNN
-F 1 "USB_B_Micro" V 6002 5630 50  0000 L CNN
-F 2 "" H 6050 5250 50  0001 C CNN
-F 3 "~" H 6050 5250 50  0001 C CNN
-	1    5900 5300
-	0    1    1    0   
-$EndComp
-NoConn ~ 5700 5600
-NoConn ~ 5800 5600
-NoConn ~ 5900 5600
-Text Label 6200 5700 0    50   ~ 0
+Text Label 5600 5150 2    50   ~ 0
 +5V
 Wire Wire Line
-	6200 5700 6100 5700
-Wire Wire Line
-	6100 5700 6100 5600
-Wire Wire Line
-	5500 5300 5400 5300
-Wire Wire Line
-	5500 5200 5400 5200
-Wire Wire Line
-	5400 5200 5400 5300
-Connection ~ 5400 5300
-Wire Wire Line
 	4850 3050 4850 4150
-Wire Wire Line
-	5150 5300 5400 5300
 $Comp
 L Connector:Conn_01x02_Male J6
 U 1 1 5F57072D
-P 1950 4500
-F 0 "J6" H 2050 4800 50  0000 C CNN
-F 1 "Conn_BB1" H 2050 4650 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Horizontal" H 1950 4500 50  0001 C CNN
-F 3 "~" H 1950 4500 50  0001 C CNN
-	1    1950 4500
+P 4600 5000
+F 0 "J6" H 4700 5300 50  0000 C CNN
+F 1 "Conn_BB1" H 4700 5150 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 4600 5000 50  0001 C CNN
+F 3 "~" H 4600 5000 50  0001 C CNN
+	1    4600 5000
+	1    0    0    1   
+$EndComp
+$Comp
+L User:Micro-USB_Breakout USB1
+U 1 1 5F660F6B
+P 6100 4950
+F 0 "USB1" H 6327 4992 50  0000 L CNN
+F 1 "Micro-USB_Breakout" H 6327 4901 50  0000 L CNN
+F 2 "user:Micro-USB_Breakout" H 6100 4950 50  0001 C CNN
+F 3 "~" H 6100 4950 50  0001 C CNN
+	1    6100 4950
 	1    0    0    -1  
 $EndComp
+NoConn ~ 5900 4850
+NoConn ~ 5900 4950
+NoConn ~ 5900 5050
+Wire Wire Line
+	5600 4750 5750 4750
+Wire Wire Line
+	5900 5150 5750 5150
 $Comp
-L Connector:Conn_01x02_Male J7
-U 1 1 5F570C00
-P 2750 4600
-F 0 "J7" H 2900 4250 50  0000 R CNN
-F 1 "Conn_BB2" H 2950 4350 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x01_P2.54mm_Horizontal" H 2750 4600 50  0001 C CNN
-F 3 "~" H 2750 4600 50  0001 C CNN
-	1    2750 4600
+L power:PWR_FLAG #FLG0102
+U 1 1 5F6670F7
+P 5750 4750
+F 0 "#FLG0102" H 5750 4825 50  0001 C CNN
+F 1 "PWR_FLAG" H 5750 4923 50  0000 C CNN
+F 2 "" H 5750 4750 50  0001 C CNN
+F 3 "~" H 5750 4750 50  0001 C CNN
+	1    5750 4750
+	1    0    0    -1  
+$EndComp
+Connection ~ 5750 4750
+Wire Wire Line
+	5750 4750 5900 4750
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5F6676D5
+P 5750 5150
+F 0 "#FLG0103" H 5750 5225 50  0001 C CNN
+F 1 "PWR_FLAG" H 5750 5323 50  0000 C CNN
+F 2 "" H 5750 5150 50  0001 C CNN
+F 3 "~" H 5750 5150 50  0001 C CNN
+	1    5750 5150
 	-1   0    0    1   
 $EndComp
+Connection ~ 5750 5150
+Wire Wire Line
+	5750 5150 5600 5150
+Wire Wire Line
+	5750 4900 5750 4750
+Wire Wire Line
+	4800 4900 5750 4900
+Wire Wire Line
+	5750 5150 5750 5000
+Wire Wire Line
+	4800 5000 5750 5000
 $Comp
-L power:GND #PWR0104
-U 1 1 5F5716E2
-P 2400 4750
-F 0 "#PWR0104" H 2400 4500 50  0001 C CNN
-F 1 "GND" V 2405 4622 50  0000 R CNN
-F 2 "" H 2400 4750 50  0001 C CNN
-F 3 "" H 2400 4750 50  0001 C CNN
-	1    2400 4750
-	0    -1   -1   0   
+L Connector:Conn_01x05_Male J4
+U 1 1 5F4D3DB1
+P 2450 3350
+F 0 "J4" H 2550 2900 50  0000 C CNN
+F 1 "Conn_SR" H 2550 3000 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 2450 3350 50  0001 C CNN
+F 3 "~" H 2450 3350 50  0001 C CNN
+	1    2450 3350
+	-1   0    0    1   
 $EndComp
-Text Label 2250 4750 2    50   ~ 0
-+5V
-Wire Wire Line
-	2250 4750 2250 4600
-Wire Wire Line
-	2250 4600 2150 4600
-Wire Wire Line
-	2250 4600 2550 4600
-Connection ~ 2250 4600
-Wire Wire Line
-	2400 4750 2400 4500
-Wire Wire Line
-	2400 4500 2550 4500
-Wire Wire Line
-	2400 4500 2150 4500
-Connection ~ 2400 4500
 $EndSCHEMATC
