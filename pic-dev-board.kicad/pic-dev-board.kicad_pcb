@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 100)
+    (drawings 101)
     (tracks 695)
     (zones 0)
     (modules 80)
@@ -4035,6 +4035,9 @@
     )
   )
 
+  (gr_text JLCJLCJLCJLC (at 108.4326 34.29) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
   (gr_text "D7\n-\nD14" (at 69.215 71.7296) (layer F.SilkS) (tstamp 5F5A4AB0)
     (effects (font (size 1 1) (thickness 0.15)))
   )
