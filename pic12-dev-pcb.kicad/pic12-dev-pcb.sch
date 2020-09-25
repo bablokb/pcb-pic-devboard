@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "PIC12-Development Breadboard-PCB"
-Date "2020-09-19"
+Date "2020-09-25"
 Rev "3"
 Comp "Bernhard Bablok"
 Comment1 "https://github.com/bablokb/pcb-pic-devboard"
@@ -19,7 +19,7 @@ U 1 1 5F04713D
 P 5750 3550
 F 0 "U1" H 5850 4000 50  0000 C CNN
 F 1 "PIC12F675-ISN" H 5400 4000 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6350 4200 50  0001 C CNN
+F 2 "user:SO-8_3.9x4.9mm_P1.27mm_HandSolder" H 6350 4200 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/41190G.pdf" H 5750 3550 50  0001 C CNN
 	1    5750 3550
 	1    0    0    -1  
