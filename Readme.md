@@ -14,7 +14,7 @@ This is a full sized dev-board, see directory `pic-dev-board.kicad`:
 
 It supports:
 
-  - a PIC12 or 20-pin PIC16
+  - a PIC12 or a 20-pin PIC16
   - configurable pullups or LEDs on GP0-GP5
   - two shift-registers with LEDs to output 8-16 bits using two GPs
     (see [project pic-sn74hc595](https://github.com/bablokb/pic-sn74hc595))
@@ -24,6 +24,8 @@ It supports:
   - all pins broken out to connectors (TRISB/TRISC only available for PIC16)
   - a large prototyping-area
 
+![](pic-dev-board.jpg)
+
 
 PIC12-Dev-PCB
 -------------
@@ -32,6 +34,7 @@ This is a small dev-board for PIC12 MCUs designed for plugging into a
 breadboard, see directory `pic12-dev-pcb`:
 
 ![](pic12-dev-pcb.png)
+
 
 It supports:
 
