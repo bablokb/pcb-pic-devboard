@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "PIC12-Development Breadboard-PCB"
-Date "2020-09-25"
-Rev "3"
+Date "2020-10-28"
+Rev "4"
 Comp "Bernhard Bablok"
 Comment1 "https://github.com/bablokb/pcb-pic-devboard"
 Comment2 ""
@@ -137,7 +137,7 @@ Text Label 6800 3550 0    50   ~ 0
 GP4
 Text Label 6800 3650 0    50   ~ 0
 GP5
-Text Label 5150 3650 2    50   ~ 0
+Text Label 4250 3650 2    50   ~ 0
 GP2
 Text Label 7250 2950 0    50   ~ 0
 +5V
@@ -185,7 +185,7 @@ $Comp
 L Device:R R1
 U 1 1 5F4BA8C0
 P 4550 3450
-F 0 "R1" V 4450 3450 50  0000 C CNN
+F 0 "R1" V 4500 3300 50  0000 C CNN
 F 1 "1K" V 4550 3450 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4480 3450 50  0001 C CNN
 F 3 "~" H 4550 3450 50  0001 C CNN
@@ -196,7 +196,7 @@ $Comp
 L Device:R R2
 U 1 1 5F4BAC46
 P 4550 3550
-F 0 "R2" V 4650 3550 50  0000 C CNN
+F 0 "R2" V 4600 3400 50  0000 C CNN
 F 1 "1K" V 4550 3550 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4480 3550 50  0001 C CNN
 F 3 "~" H 4550 3550 50  0001 C CNN
@@ -246,11 +246,11 @@ F 3 "" H 2050 3100 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text Label 2250 3250 2    50   ~ 0
-RCLK
+GP0
 Text Label 2250 3350 2    50   ~ 0
-SCLK
-Text Label 2250 3450 2    50   ~ 0
 GP2
+Text Label 2250 3450 2    50   ~ 0
+GP1
 Text Label 2250 3550 2    50   ~ 0
 +5V
 Wire Wire Line
@@ -261,14 +261,7 @@ Wire Wire Line
 	6350 3650 6800 3650
 Wire Wire Line
 	6350 3550 6800 3550
-Text Label 4250 3700 2    50   ~ 0
-SCLK
-Wire Wire Line
-	4250 3700 4250 3550
-Text Label 2550 3250 0    50   ~ 0
-RCLK
-NoConn ~ 2550 3250
-Text Notes 1850 3450 0    50   ~ 0
+Text Notes 1800 3450 0    50   ~ 0
 SERin
 Text Label 5600 5150 2    50   ~ 0
 +5V
@@ -348,6 +341,12 @@ F 1 "Conn_SR" H 2550 3000 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 2450 3350 50  0001 C CNN
 F 3 "~" H 2450 3350 50  0001 C CNN
 	1    2450 3350
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
+Text Notes 1800 3250 0    50   ~ 0
+RCLK
+Text Notes 1800 3350 0    50   ~ 0
+SCLK
+Wire Wire Line
+	5150 3650 4250 3650
 $EndSCHEMATC
