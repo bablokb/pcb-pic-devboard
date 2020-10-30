@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "PIC12-Development Breadboard-PCB"
-Date "2020-10-28"
-Rev "4"
+Date "2020-10-30"
+Rev "5"
 Comp "Bernhard Bablok"
 Comment1 "https://github.com/bablokb/pcb-pic-devboard"
 Comment2 ""
@@ -36,12 +36,12 @@ F 3 "~" H 4350 3050 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector:Conn_01x07_Male J2
+L Connector:Conn_01x08_Male J2
 U 1 1 5F04965B
 P 8050 3600
 F 0 "J2" H 8350 2950 50  0000 R CNN
 F 1 "App-Conn1" H 8350 3050 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 8050 3600 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 8050 3600 50  0001 C CNN
 F 3 "~" H 8050 3600 50  0001 C CNN
 	1    8050 3600
 	-1   0    0    1   
@@ -119,13 +119,13 @@ F 3 "" H 5600 4750 50  0001 C CNN
 $EndComp
 Text Notes 4250 3300 2    63   ~ 0
 Vpp\nVdd\nGND\nGP0/DAT\nGP1/CLK
-Text Label 7850 3300 2    50   ~ 0
+Text Label 7850 3200 2    50   ~ 0
 GP5
-Text Label 7850 3400 2    50   ~ 0
+Text Label 7850 3300 2    50   ~ 0
 GP4
-Text Label 7850 3500 2    50   ~ 0
+Text Label 7850 3400 2    50   ~ 0
 +5V
-Text Label 7850 3600 2    50   ~ 0
+Text Label 7850 3500 2    50   ~ 0
 GND
 Text Label 7850 3900 2    50   ~ 0
 GP0
@@ -157,24 +157,16 @@ Wire Wire Line
 	4700 3550 4950 3550
 Connection ~ 4950 3550
 $Comp
-L Connector_Generic:Conn_02x07_Odd_Even J3
+L Connector_Generic:Conn_02x08_Odd_Even J3
 U 1 1 5F4BCD54
 P 8700 3600
 F 0 "J3" H 8800 2950 50  0000 R CNN
 F 1 "App-Conn2" H 9000 3050 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x07_P2.54mm_Vertical" H 8700 3600 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 8700 3600 50  0001 C CNN
 F 3 "~" H 8700 3600 50  0001 C CNN
 	1    8700 3600
 	1    0    0    1   
 $EndComp
-Text Label 8500 3300 2    50   ~ 0
-GP5
-Text Label 8500 3400 2    50   ~ 0
-GP4
-Text Label 8500 3500 2    50   ~ 0
-+5V
-Text Label 8500 3600 2    50   ~ 0
-GND
 Text Label 8500 3900 2    50   ~ 0
 GP0
 Text Label 8500 3800 2    50   ~ 0
@@ -220,14 +212,6 @@ F 3 "~" H 7050 2950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6600 2950 6850 2950
-Text Label 9000 3300 0    50   ~ 0
-GP5
-Text Label 9000 3400 0    50   ~ 0
-GP4
-Text Label 9000 3500 0    50   ~ 0
-+5V
-Text Label 9000 3600 0    50   ~ 0
-GND
 Text Label 9000 3900 0    50   ~ 0
 GP0
 Text Label 9000 3800 0    50   ~ 0
@@ -349,4 +333,31 @@ Text Notes 1800 3350 0    50   ~ 0
 SCLK
 Wire Wire Line
 	5150 3650 4250 3650
+Text Label 8500 3500 2    50   ~ 0
+GND
+Text Label 8500 3400 2    50   ~ 0
++5V
+Text Label 8500 3300 2    50   ~ 0
+GP4
+Text Label 8500 3200 2    50   ~ 0
+GP5
+Text Label 9000 3200 0    50   ~ 0
+GP5
+Text Label 9000 3300 0    50   ~ 0
+GP4
+Text Label 9000 3400 0    50   ~ 0
++5V
+Text Label 9000 3500 0    50   ~ 0
+GND
+Text Label 9000 3600 0    50   ~ 0
+GP3
+Text Label 8500 3600 2    50   ~ 0
+GP3
+Text Label 7850 3600 2    50   ~ 0
+GP3
+Text Label 6800 3450 0    50   ~ 0
+GP3
+Wire Wire Line
+	6500 3450 6800 3450
+Connection ~ 6500 3450
 $EndSCHEMATC
