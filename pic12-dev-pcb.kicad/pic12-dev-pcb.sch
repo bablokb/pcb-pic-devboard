@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "PIC12-Development Breadboard-PCB"
 Date "2020-10-30"
-Rev "5"
+Rev "6"
 Comp "Bernhard Bablok"
 Comment1 "https://github.com/bablokb/pcb-pic-devboard"
 Comment2 ""
@@ -257,7 +257,7 @@ U 1 1 5F57072D
 P 4600 5000
 F 0 "J6" H 4700 5300 50  0000 C CNN
 F 1 "Conn_BB1" H 4700 5150 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 4600 5000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4600 5000 50  0001 C CNN
 F 3 "~" H 4600 5000 50  0001 C CNN
 	1    4600 5000
 	1    0    0    1   
@@ -360,4 +360,106 @@ GP3
 Wire Wire Line
 	6500 3450 6800 3450
 Connection ~ 6500 3450
+$Comp
+L Device:R R3
+U 1 1 5F9D00BF
+P 2750 4950
+F 0 "R3" V 2850 4950 50  0000 C CNN
+F 1 "1kΩ" V 2750 4950 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 2680 4950 50  0001 C CNN
+F 3 "~" H 2750 4950 50  0001 C CNN
+	1    2750 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Conn_01x03_Male J5
+U 1 1 5F9D134F
+P 1950 4950
+F 0 "J5" H 2050 5250 50  0000 C CNN
+F 1 "Conn_01x03_Male" H 2050 5150 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1950 4950 50  0001 C CNN
+F 3 "~" H 1950 4950 50  0001 C CNN
+	1    1950 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5F9D1E69
+P 3050 4950
+F 0 "D1" H 3050 5050 50  0000 C CNN
+F 1 "LED" H 3050 4850 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3050 4950 50  0001 C CNN
+F 3 "~" H 3050 4950 50  0001 C CNN
+	1    3050 4950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5F9D3FD3
+P 3000 5300
+F 0 "SW1" H 3000 5450 50  0000 C CNN
+F 1 "SW_Push" H 3000 5550 50  0000 C CNN
+F 2 "user:SW_PUSH_SLIM_1x4" H 3000 5500 50  0001 C CNN
+F 3 "~" H 3000 5500 50  0001 C CNN
+	1    3000 5300
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5F9D46D7
+P 3400 4950
+F 0 "#PWR01" H 3400 4700 50  0001 C CNN
+F 1 "GND" V 3405 4822 50  0000 R CNN
+F 2 "" H 3400 4950 50  0001 C CNN
+F 3 "" H 3400 4950 50  0001 C CNN
+	1    3400 4950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2150 5050 2450 5050
+Wire Wire Line
+	2450 5050 2450 5300
+Wire Wire Line
+	2450 5300 2800 5300
+$Comp
+L Device:R R4
+U 1 1 5F9EC54C
+P 2750 4600
+F 0 "R4" V 2850 4600 50  0000 C CNN
+F 1 "1kΩ" V 2750 4600 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 2680 4600 50  0001 C CNN
+F 3 "~" H 2750 4600 50  0001 C CNN
+	1    2750 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5F9EC552
+P 3050 4600
+F 0 "D2" H 3050 4700 50  0000 C CNN
+F 1 "LED" H 3050 4500 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3050 4600 50  0001 C CNN
+F 3 "~" H 3050 4600 50  0001 C CNN
+	1    3050 4600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2450 4600 2600 4600
+Wire Wire Line
+	3200 4600 3400 4600
+Wire Wire Line
+	3400 4600 3400 4950
+Wire Wire Line
+	3200 5300 3400 5300
+Connection ~ 3400 4950
+Wire Wire Line
+	3400 4950 3400 5300
+Wire Wire Line
+	3200 4950 3400 4950
+Wire Wire Line
+	2150 4950 2600 4950
+Wire Wire Line
+	2450 4600 2450 4850
+Wire Wire Line
+	2450 4850 2150 4850
 $EndSCHEMATC
