@@ -10,7 +10,7 @@ PIC-Dev-Board
 
 This is a full sized dev-board, see directory `pic-dev-board.kicad`:
 
-![](pic-dev-board.png)
+![](pic-dev-board-3D.png)
 
 It supports:
 
@@ -24,7 +24,7 @@ It supports:
   - all pins broken out to connectors (TRISB/TRISC only available for PIC16)
   - a large prototyping-area
 
-![](pic-dev-board.jpg)
+![](pic-dev-board-image.jpg)
 
 
 PIC12-Dev-PCB
@@ -33,7 +33,7 @@ PIC12-Dev-PCB
 This is a small dev-board for PIC12 MCUs designed for plugging into a
 breadboard, see directory `pic12-dev-pcb`:
 
-![](pic12-dev-pcb.png)
+![](pic12-dev-pcb-3D.png)
 
 
 It supports:
@@ -54,9 +54,9 @@ Minimal Stripboard Version
 In the directory `pic12-dev-stripboard.kicad` you find the schema and layout for
 a minimal stripboard version:
 
-![](stripboard.jpg)
+![](pic12-dev-stripboard-image.jpg)
 
-![](layout-stripboard.png)
+![](pic12-dev-stripboard-layout.png)
 
 This is a simple solution for plugging a PIC12 into a breadboard.
 
