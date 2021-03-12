@@ -46,6 +46,8 @@ It supports:
   - power-supply using a small micro-USB-connector breakout
   - connector for power-out (should align with the power-rails of the breadboard)
   - a small prototyping area
+  - a small switch (optional)
+  - two LEDs (optional)
 
 
 Minimal Stripboard Version
