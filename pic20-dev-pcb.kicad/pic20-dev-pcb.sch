@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "PIC20-Development Breadboard-PCB"
-Date "2021-04-20"
-Rev "1.2"
+Date "2021-04-21"
+Rev "1.3"
 Comp "Bernhard Bablok"
 Comment1 "https://github.com/bablokb/pcb-pic-devboard"
 Comment2 ""
@@ -335,7 +335,7 @@ U 1 1 607B06DB
 P 5450 5100
 F 0 "U1" H 5900 6100 50  0000 C CNN
 F 1 "PIC16F1829-IP" H 5950 5950 50  0000 C CNN
-F 2 "Package_DIP:DIP-20_W7.62mm" H 5450 4550 50  0001 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm_Socket" H 5450 4550 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/41440C.pdf" H 5450 4550 50  0001 C CNN
 	1    5450 5100
 	1    0    0    -1  
@@ -439,11 +439,7 @@ Wire Wire Line
 Wire Wire Line
 	3850 5100 4350 5100
 Wire Wire Line
-	3850 5300 4350 5300
-Wire Wire Line
 	3850 5400 4350 5400
-Wire Wire Line
-	3850 5500 4350 5500
 Wire Wire Line
 	3850 5600 4350 5600
 Text Label 6850 4700 0    50   ~ 0
@@ -463,9 +459,9 @@ RC1
 Text Label 6850 5400 0    50   ~ 0
 RC0
 Wire Wire Line
-	6550 4700 6850 4700
+	6550 4700 6800 4700
 Wire Wire Line
-	6550 4800 6850 4800
+	6550 4800 6650 4800
 Wire Wire Line
 	6550 4900 6850 4900
 Wire Wire Line
@@ -629,4 +625,60 @@ Wire Wire Line
 	9050 4600 9300 4600
 Text Label 9050 4500 0    50   ~ 0
 +VDD
+$Comp
+L Connector:Conn_01x06_Male J8
+U 1 1 60824EA3
+P 10000 4700
+F 0 "J8" H 10100 5200 50  0000 C CNN
+F 1 "SPI_Conn" H 10100 5100 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 10000 4700 50  0001 C CNN
+F 3 "~" H 10000 4700 50  0001 C CNN
+	1    10000 4700
+	1    0    0    -1  
+$EndComp
+Text Label 10200 4500 0    50   ~ 0
++VDD
+$Comp
+L power:GND #PWR03
+U 1 1 60828E41
+P 10450 4600
+F 0 "#PWR03" H 10450 4350 50  0001 C CNN
+F 1 "GND" H 10455 4427 50  0000 C CNN
+F 2 "" H 10450 4600 50  0001 C CNN
+F 3 "" H 10450 4600 50  0001 C CNN
+	1    10450 4600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10200 4600 10450 4600
+Text Label 10200 4700 0    50   ~ 0
+CS
+Text Label 10200 4800 0    50   ~ 0
+CLK
+Text Label 10200 4900 0    50   ~ 0
+SDI
+Text Label 10200 5000 0    50   ~ 0
+SDO
+Text Label 6800 4550 0    50   ~ 0
+SDO
+Wire Wire Line
+	6800 4550 6800 4700
+Connection ~ 6800 4700
+Wire Wire Line
+	6800 4700 6850 4700
+Text Label 3650 5300 2    50   ~ 0
+SDI
+Wire Wire Line
+	3650 5300 4350 5300
+Text Label 3650 5500 2    50   ~ 0
+CLK
+Wire Wire Line
+	3650 5500 4350 5500
+Text Label 6650 4550 0    50   ~ 0
+CS
+Wire Wire Line
+	6650 4550 6650 4800
+Connection ~ 6650 4800
+Wire Wire Line
+	6650 4800 6850 4800
 $EndSCHEMATC
