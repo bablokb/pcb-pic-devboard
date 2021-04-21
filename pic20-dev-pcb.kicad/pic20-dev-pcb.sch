@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "PIC20-Development Breadboard-PCB"
 Date "2021-04-20"
-Rev "1.1"
+Rev "1.2"
 Comp "Bernhard Bablok"
 Comment1 "https://github.com/bablokb/pcb-pic-devboard"
 Comment2 ""
@@ -55,7 +55,7 @@ U 1 1 5F062C50
 P 5450 3800
 F 0 "C1" H 5565 3846 50  0000 L CNN
 F 1 "100nF" H 5565 3755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 5488 3650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5488 3650 50  0001 C CNN
 F 3 "~" H 5450 3800 50  0001 C CNN
 	1    5450 3800
 	1    0    0    -1  
@@ -109,7 +109,7 @@ U 1 1 5F4BA8C0
 P 3750 4600
 F 0 "R1" V 3700 4450 50  0000 C CNN
 F 1 "1K" V 3750 4600 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3680 4600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3680 4600 50  0001 C CNN
 F 3 "~" H 3750 4600 50  0001 C CNN
 	1    3750 4600
 	0    1    1    0   
@@ -120,7 +120,7 @@ U 1 1 5F4BAC46
 P 3750 4700
 F 0 "R2" V 3800 4550 50  0000 C CNN
 F 1 "1K" V 3750 4700 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 3680 4700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3680 4700 50  0001 C CNN
 F 3 "~" H 3750 4700 50  0001 C CNN
 	1    3750 4700
 	0    1    1    0   
@@ -233,7 +233,7 @@ U 1 1 5F9D00BF
 P 1850 6750
 F 0 "R3" V 1950 6750 50  0000 C CNN
 F 1 "1kΩ" V 1850 6750 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 1780 6750 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1780 6750 50  0001 C CNN
 F 3 "~" H 1850 6750 50  0001 C CNN
 	1    1850 6750
 	0    1    1    0   
@@ -255,7 +255,7 @@ U 1 1 5F9D1E69
 P 2150 6750
 F 0 "D1" H 2150 6850 50  0000 C CNN
 F 1 "LED" H 2150 6650 50  0000 C CNN
-F 2 "LED_SMD:LED_1206_3216Metric" H 2150 6750 50  0001 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 2150 6750 50  0001 C CNN
 F 3 "~" H 2150 6750 50  0001 C CNN
 	1    2150 6750
 	-1   0    0    1   
@@ -294,7 +294,7 @@ U 1 1 5F9EC54C
 P 1850 6400
 F 0 "R4" V 1950 6400 50  0000 C CNN
 F 1 "1kΩ" V 1850 6400 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 1780 6400 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1780 6400 50  0001 C CNN
 F 3 "~" H 1850 6400 50  0001 C CNN
 	1    1850 6400
 	0    1    1    0   
@@ -305,7 +305,7 @@ U 1 1 5F9EC552
 P 2150 6400
 F 0 "D2" H 2150 6500 50  0000 C CNN
 F 1 "LED" H 2150 6300 50  0000 C CNN
-F 2 "LED_SMD:LED_1206_3216Metric" H 2150 6400 50  0001 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 2150 6400 50  0001 C CNN
 F 3 "~" H 2150 6400 50  0001 C CNN
 	1    2150 6400
 	-1   0    0    1   
@@ -335,7 +335,7 @@ U 1 1 607B06DB
 P 5450 5100
 F 0 "U1" H 5900 6100 50  0000 C CNN
 F 1 "PIC16F1829-IP" H 5950 5950 50  0000 C CNN
-F 2 "Socket:DIP_Socket-20_W4.3_W5.08_W7.62_W10.16_W10.9_3M_220-3342-00-0602J" H 5450 4550 50  0001 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm" H 5450 4550 50  0001 C CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/41440C.pdf" H 5450 4550 50  0001 C CNN
 	1    5450 5100
 	1    0    0    -1  
@@ -365,41 +365,41 @@ Connection ~ 4550 4100
 Wire Wire Line
 	4550 4100 5450 4100
 $Comp
-L Connector:Conn_01x10_Male J2
+L Connector:Conn_01x09_Male J2
 U 1 1 607EC51A
-P 7800 5000
-F 0 "J2" H 7900 5750 50  0000 C CNN
-F 1 "App_Conn_1" H 7950 5600 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 7800 5000 50  0001 C CNN
-F 3 "~" H 7800 5000 50  0001 C CNN
-	1    7800 5000
+P 8000 4900
+F 0 "J2" H 8200 5600 50  0000 C CNN
+F 1 "App_Conn_1" H 8200 5500 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical" H 8000 4900 50  0001 C CNN
+F 3 "~" H 8000 4900 50  0001 C CNN
+	1    8000 4900
 	1    0    0    -1  
 $EndComp
-Text Label 8000 4900 0    50   ~ 0
+Text Label 8200 4700 0    50   ~ 0
 RA3
-Text Label 8000 4800 0    50   ~ 0
+Text Label 8200 4600 0    50   ~ 0
 RA4
-Text Label 8000 4700 0    50   ~ 0
+Text Label 8200 4500 0    50   ~ 0
 RA5
-Text Label 8000 5200 0    50   ~ 0
+Text Label 8200 5000 0    50   ~ 0
 RC3
-Text Label 8000 5100 0    50   ~ 0
+Text Label 8200 4900 0    50   ~ 0
 RC4
-Text Label 8000 5000 0    50   ~ 0
+Text Label 8200 4800 0    50   ~ 0
 RC5
-Text Label 8000 5300 0    50   ~ 0
+Text Label 8200 5100 0    50   ~ 0
 RC6
-Text Label 8000 5500 0    50   ~ 0
+Text Label 8200 5300 0    50   ~ 0
 RB7
-Text Label 8000 5400 0    50   ~ 0
+Text Label 8200 5200 0    50   ~ 0
 RC7
 $Comp
-L Connector:Conn_01x10_Male J3
+L Connector:Conn_01x11_Male J3
 U 1 1 607F7A8D
 P 8850 5000
-F 0 "J3" H 8950 5750 50  0000 C CNN
-F 1 "App_Conn_2" H 9000 5600 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 8850 5000 50  0001 C CNN
+F 0 "J3" H 8950 5800 50  0000 C CNN
+F 1 "App_Conn_2" H 9000 5700 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x11_P2.54mm_Vertical" H 8850 5000 50  0001 C CNN
 F 3 "~" H 8850 5000 50  0001 C CNN
 	1    8850 5000
 	1    0    0    -1  
@@ -625,8 +625,8 @@ F 3 "" H 9300 4600 50  0001 C CNN
 	1    9300 4600
 	0    -1   -1   0   
 $EndComp
-Text Label 8000 4600 0    50   ~ 0
-+VDD
 Wire Wire Line
 	9050 4600 9300 4600
+Text Label 9050 4500 0    50   ~ 0
++VDD
 $EndSCHEMATC
