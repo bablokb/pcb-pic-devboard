@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "PIC20-Development Breadboard-PCB"
-Date "2021-04-27"
-Rev "1.4"
+Date "2021-05-20"
+Rev "1.5"
 Comp "Bernhard Bablok"
 Comment1 "https://github.com/bablokb/pcb-pic-devboard"
 Comment2 ""
@@ -77,13 +77,13 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0102
 U 1 1 5F0642E9
-P 5850 2400
-F 0 "#PWR0102" H 5850 2150 50  0001 C CNN
-F 1 "GND" H 5950 2150 50  0000 R CNN
-F 2 "" H 5850 2400 50  0001 C CNN
-F 3 "" H 5850 2400 50  0001 C CNN
-	1    5850 2400
-	1    0    0    -1  
+P 4750 1700
+F 0 "#PWR0102" H 4750 1450 50  0001 C CNN
+F 1 "GND" H 4850 1450 50  0000 R CNN
+F 2 "" H 4750 1700 50  0001 C CNN
+F 3 "" H 4750 1700 50  0001 C CNN
+	1    4750 1700
+	-1   0    0    1   
 $EndComp
 Text Notes 3450 4450 2    63   ~ 0
 Vpp\nVdd\nGND\nGP0/DAT\nGP1/CLK
@@ -178,43 +178,16 @@ F 3 "~" H 3850 1800 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L User:Micro-USB_Breakout USB1
+L Connector:USB_B_Micro USB1
 U 1 1 5F660F6B
-P 5550 1900
-F 0 "USB1" H 5750 1350 50  0000 L CNN
-F 1 "Micro-USB_Breakout" H 5500 1500 50  0000 L CNN
-F 2 "user:USB_Micro-B_JLCPCB_40942" H 5550 1900 50  0001 C CNN
-F 3 "~" H 5550 1900 50  0001 C CNN
-F 4 "C40942" H 5550 1900 50  0001 C CNN "LCSC"
-	1    5550 1900
-	-1   0    0    1   
-$EndComp
-NoConn ~ 5750 2000
-NoConn ~ 5750 1900
-NoConn ~ 5750 1800
-Wire Wire Line
-	5750 1700 5900 1700
-$Comp
-L power:PWR_FLAG #FLG0102
-U 1 1 5F6670F7
-P 5500 2400
-F 0 "#FLG0102" H 5500 2475 50  0001 C CNN
-F 1 "PWR_FLAG" H 5500 2650 50  0000 C CNN
-F 2 "" H 5500 2400 50  0001 C CNN
-F 3 "~" H 5500 2400 50  0001 C CNN
-	1    5500 2400
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:PWR_FLAG #FLG0103
-U 1 1 5F6676D5
-P 5900 1700
-F 0 "#FLG0103" H 5900 1775 50  0001 C CNN
-F 1 "PWR_FLAG" H 5900 1873 50  0000 C CNN
-F 2 "" H 5900 1700 50  0001 C CNN
-F 3 "~" H 5900 1700 50  0001 C CNN
-	1    5900 1700
-	1    0    0    -1  
+P 5550 1150
+F 0 "USB1" V 5100 1000 50  0000 L CNN
+F 1 "Micro-USB" V 5250 950 50  0000 L CNN
+F 2 "user:USB_Micro-B_JLCPCB_40942" H 5550 1150 50  0001 C CNN
+F 3 "~" H 5550 1150 50  0001 C CNN
+F 4 "C40942" H 5550 1150 50  0001 C CNN "LCSC"
+	1    5550 1150
+	0    1    1    0   
 $EndComp
 $Comp
 L Connector:Conn_01x05_Male J4
@@ -561,12 +534,7 @@ F 4 "C6186" H 6850 1700 50  0001 C CNN "LCSC"
 	1    6850 1700
 	1    0    0    1   
 $EndComp
-Wire Wire Line
-	5900 1700 6300 1700
-Connection ~ 5900 1700
 Connection ~ 6550 1700
-Wire Wire Line
-	5750 2100 5850 2100
 Wire Wire Line
 	6300 1700 6300 2550
 Wire Wire Line
@@ -599,17 +567,7 @@ Connection ~ 6700 3000
 Wire Wire Line
 	6700 3000 6200 3000
 Wire Wire Line
-	5850 2400 5500 2400
-Wire Wire Line
-	5850 2100 5850 2400
-Connection ~ 5850 2400
-Wire Wire Line
-	5500 2400 5150 2400
-Wire Wire Line
-	5150 2400 5150 1700
-Wire Wire Line
-	5150 1700 4050 1700
-Connection ~ 5500 2400
+	5150 1700 4750 1700
 Text Label 6200 2900 2    50   ~ 0
 +VDD
 Wire Wire Line
@@ -692,4 +650,19 @@ Wire Wire Line
 Connection ~ 6650 4800
 Wire Wire Line
 	6650 4800 6850 4800
+Wire Wire Line
+	5750 1700 5750 1450
+NoConn ~ 5550 1450
+NoConn ~ 5450 1450
+NoConn ~ 5350 1450
+Wire Wire Line
+	5150 1150 5150 1700
+Connection ~ 4750 1700
+Wire Wire Line
+	5150 1150 5150 1050
+Connection ~ 5150 1150
+Wire Wire Line
+	5750 1700 6300 1700
+Wire Wire Line
+	4050 1700 4750 1700
 $EndSCHEMATC
